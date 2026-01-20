@@ -1,0 +1,3694 @@
+{
+  "chapters": {
+    "-MuJFhs4qTfxquY9V3Lc": {
+      "chapter": 1,
+      "name": "Respondent Conditioning"
+    },
+    "-MuJFhtNJjUnGIpbnSpd": {
+      "chapter": 2,
+      "name": "Operant Conditioning for Dummies (Pt 1)"
+    },
+    "-MuJFhtPHSGuoTgabNNM": {
+      "chapter": 3,
+      "name": "Operant Conditioning for Dummies (Pt 2)"
+    },
+    "-MuJFhtRg7J-Z-nz-L5-": {
+      "chapter": 4,
+      "name": "Research Methods"
+    },
+    "-MuJFhtSGS8s9wfDRppP": {
+      "chapter": 5,
+      "name": "The Philosophy Supporting Behavior Analysis"
+    },
+    "-MuJFhtUSFopVXQPqj7j": {
+      "chapter": 6,
+      "name": "Positive Reinforcement"
+    },
+    "-MuJFhtVqh5LSyagKRXK": {
+      "chapter": 7,
+      "name": "Negative Reinforcement"
+    },
+    "-MuJFhtXU5WxZ7qqkLEV": {
+      "chapter": 8,
+      "name": "Positive Reinforcement"
+    },
+    "-MuJFhtYt5vKkFBHMiZt": {
+      "chapter": 9,
+      "name": "Negative Reinforcement"
+    },
+    "-MuJFhtZG5WG16ggMMIW": {
+      "chapter": 10,
+      "name": "Extinction (Following Reinforcement) and Recovery (Following Punishment)"
+    },
+    "-MuJFhtaiJ8GKFQP_fkz": {
+      "chapter": 11,
+      "name": "Differential Reinforcement and Differential Punishment"
+    },
+    "-MuJFhtbYBlxg8-NK-YQ": {
+      "chapter": 12,
+      "name": "Unconditioned and Conditioned Reiforcers and Punishers"
+    },
+    "-MuJFhtcw9SIJ53zvbBN": {
+      "chapter": 13,
+      "name": "Motivating Operations"
+    },
+    "-MuJFhtdETNejwx4JtV0": {
+      "chapter": 14,
+      "name": "Basic Stimulus Control"
+    },
+    "-MuJFhtedlP_oxLZv60M": {
+      "chapter": 15,
+      "name": "Complex Stimulus Control"
+    },
+    "-MuJFhuuiyPqj3GWf7qK": {
+      "chapter": 16,
+      "name": "Imitation"
+    },
+    "-MuJFhuvDKmN2vxxmKdd": {
+      "chapter": 17,
+      "name": "Avoidance"
+    },
+    "-MuJFhuwgzZoNs2d2k3C": {
+      "chapter": 18,
+      "name": "Shaping"
+    },
+    "-MuJFhuxJhb2j-wgI3fN": {
+      "chapter": 19,
+      "name": "Behavioral Chains"
+    },
+    "-MuJFhuyXExVcG2Vzdjw": {
+      "chapter": 20,
+      "name": "Ratio Schedules"
+    },
+    "-MuJFhuyXExVcG2Vzdjx": {
+      "chapter": 21,
+      "name": "Time-­based Schedules"
+    },
+    "-MuJFhuzIQdYHS9MwKB0": {
+      "chapter": 22,
+      "name": "Concurrent Contingencies"
+    },
+    "-MuJFhv-vnz1l1kyKP5T": {
+      "chapter": 23,
+      "name": "Maintenance and Transfer"
+    },
+    "-MuJFhv0wJyYxjKl4t4t": {
+      "chapter": 24,
+      "name": "Verbal Behavior"
+    },
+    "-MuJFhv0wJyYxjKl4t4u": {
+      "chapter": 25,
+      "name": "Rule-­governed Behavior: Concepts and Applications"
+    },
+    "-MuJFhv11T9S2MSTMb7u": {
+      "chapter": 26,
+      "name": "Rule-­governed Behavior: Theory"
+    }
+  },
+  "terms": {
+    "-MuJ7QCYaflRNFIOYoCm": {
+      "chapter": 1,
+      "definition": "A stimulus that elicits (causes) a response without previous pairing with another stimulus.",
+      "term": "Unconditioned stimulus (US)"
+    },
+    "-MuJ7QCcPdU1B3IaAsOY": {
+      "chapter": 1,
+      "definition": "A response elicited (caused) by an unconditioned stimulus.",
+      "term": "Unconditioned response (UR)"
+    },
+    "-MuJ7QCeRcbgkG9myyLy": {
+      "chapter": 1,
+      "definition": "A stimulus that elicits (causes) a response because of previous pairing with another stimulus.",
+      "term": "Conditioned stimulus (CS)"
+    },
+    "-MuJ7QE4CMJy1HuUxOmi": {
+      "chapter": 1,
+      "definition": "A response elicited (caused) by a conditioned stimulus.",
+      "term": "Conditioned response (CR)"
+    },
+    "-MuJ7QE5oZJx0E5-aoO9": {
+      "chapter": 1,
+      "definition": "Pairing a neutral stimulus with an unconditioned stimulus causes it to elicit the conditioned response.",
+      "term": "Respondent conditioning"
+    },
+    "-MuJ7QE7jnIuAh4YVrLZ": {
+      "chapter": 1,
+      "definition": "Establishing a conditioned stimulus by pairing a neutral stimulus with an already established conditioned stimulus.",
+      "term": "Higher-order respondent conditioning"
+    },
+    "-MuJ7QE97ch9M77UwhR-": {
+      "chapter": 1,
+      "definition": "Presenting the conditioned stimulus without pairing it with the unconditioned stimulus, or with an already established conditioned stimulus, and the conditioned stimulus will lose its eliciting power.",
+      "term": "Respondent extinction"
+    },
+    "-MuJ7QEBAdlRZpIz3S4z": {
+      "chapter": 1,
+      "definition": "Combining relaxation with a hierarchy of fear-­producing stimuli, arranged from the least to the most frightening.",
+      "term": "Systematic desensitization"
+    },
+    "-MuJ7QECAqVAadKJ8Af3": {
+      "chapter": 2,
+      "definition": "A stimulus that increases the frequency of a response it follows.",
+      "term": "Positive reinforcer (reinforcer)"
+    },
+    "-MuJ7QEENk5f_VoBcxyH": {
+      "chapter": 2,
+      "definition": "The response-­contingent presentation of a reinforcer resulting in an increased frequency of that response.",
+      "term": "Positive reinforcement contingency (reinforcement)"
+    },
+    "-MuJ7QEFwoXuzSRpZsKi": {
+      "chapter": 2,
+      "definition": "A stimulus that increases the future frequency of a response that its removal (termination) follows.",
+      "term": "Negative reinforcer (aversive stimulus)"
+    },
+    "-MuJ7QEGdFoA0ZJNrVbm": {
+      "chapter": 2,
+      "definition": "The response-contingent removal of a negative reinforcer resulting in an increased frequency of that response.",
+      "term": "Negative reinforcement contingency (escape)."
+    },
+    "-MuJ7QEHyY7fxHMyIUk3": {
+      "chapter": 2,
+      "definition": "A stimulus that decreases the future frequency of a response that its presentation follows.",
+      "term": "Punisher (aversive stimulus)"
+    },
+    "-MuJ7QEI8noNtAtUHdXN": {
+      "chapter": 2,
+      "definition": "The response-­contingent presentation of a punisher resulting in a decreased frequency of that response.",
+      "term": "Positive punishment contingency (punishment)"
+    },
+    "-MuJ7QEJM8Zl72c8SBsz": {
+      "chapter": 2,
+      "definition": "Response-contingent removal of a reinforcer resulting in a decreased frequency of that response.",
+      "term": "Negative punishment contingency (penalty)"
+    },
+    "-MuJ7QEKMSIQuC81fZoz": {
+      "chapter": 2,
+      "definition": "The occasion for a response, the response, and the outcome of the response.",
+      "term": "Behavioral contingency"
+    },
+    "-MuJ7QELo1LLuVLSuclr": {
+      "chapter": 2,
+      "definition": "Stopping the positive or negative reinforcement contingency for a previously reinforced response causes the response frequency to decrease.",
+      "term": "Extinction"
+    },
+    "-MuJ7QEMbe_52DQYBs4N": {
+      "chapter": 3,
+      "definition": "A description of a behavioral contingency.",
+      "term": "Rule"
+    },
+    "-MuJ7QEN-2xessMobRd9": {
+      "chapter": 3,
+      "definition": "Behavior under the control of a rule.",
+      "term": "Rule-­governed behavior"
+    },
+    "-MuJ7QEN-2xessMobRdA": {
+      "chapter": 3,
+      "definition": "Behavior under the control of a direct-­acting contingency.",
+      "term": "Contingency-­shaped behavior"
+    },
+    "-MuJ7QFc2ufHnayudjNF": {
+      "chapter": 3,
+      "definition": "A rule statement describing the desired or undesired behavior, the occasion when the behavior should or should not occur, and the added outcome for that behavior.",
+      "term": "Contingency contract (behavioral contract or performance contract)"
+    },
+    "-MuJ7QFc2ufHnayudjNG": {
+      "chapter": 3,
+      "definition": "The use of a contingency contract where the person whose behavior is being managed determines/ performs one or more components of that contract.",
+      "term": "Self-­management"
+    },
+    "-MuJ7QFdkeXXK0H-wwil": {
+      "chapter": 3,
+      "definition": "Reinforcing or pushing consequences immediately following a response increase or decrease it future frequency.",
+      "term": "Operant conditioning"
+    },
+    "-MuJ7QFeFrOseTM6RGnJ": {
+      "chapter": 3,
+      "definition": "Behavior that operates on the environment and is influenced by its reinforcing or punishing consequences.",
+      "term": "Operant behavior"
+    },
+    "-MuJ7QFeFrOseTM6RGnK": {
+      "chapter": 3,
+      "definition": "The effects of our actions determine whether we will repeat them.",
+      "term": "Law of effect"
+    },
+    "-MuJ7QFj_Wi8m76TnQq9": {
+      "chapter": 4,
+      "definition": "The variable the experimenter systematically manipulates to influence the dependent variable.",
+      "term": "Independent variable"
+    },
+    "-MuJ7QFmeDRbW_PB6BZL": {
+      "chapter": 4,
+      "definition": "A measure of the participant’s behavior.",
+      "term": "Dependent variable"
+    },
+    "-MuJ7QFmeDRbW_PB6BZM": {
+      "chapter": 4,
+      "definition": "The phase of an experiment or intervention where the behavior is measured in the absence of an intervention.",
+      "term": "Baseline"
+    },
+    "-MuJ7QFnlWTn9sn7pWK_": {
+      "chapter": 4,
+      "definition": "Instructions, modeling, practice, and feedback.",
+      "term": "Behavioral skills training (BST)"
+    },
+    "-MuJ7QFohy8tGQ760SVG": {
+      "chapter": 4,
+      "definition": "An experimental design in which the replications involve baselines of differing durations and interventions of differing starting times.",
+      "term": "Multiple-­baseline design"
+    },
+    "-MuJ7QFohy8tGQ760SVH": {
+      "chapter": 4,
+      "definition": "An explicit definition that makes it possible for two or more observers to identify the same behavior when it occurs.",
+      "term": "Operational definition"
+    },
+    "-MuJ7QFpdGYR45tN1_4j": {
+      "chapter": 4,
+      "definition": "Agreement between observations of two or more independent observers.",
+      "term": "Interobserver agreement"
+    },
+    "-MuJ7QFpdGYR45tN1_4k": {
+      "chapter": 4,
+      "definition": "A group of participants exposed to the presumed crucial value of the independent variable.",
+      "term": "Experimental group"
+    },
+    "-MuJ7QFq7_pL6G5w0J_0": {
+      "chapter": 4,
+      "definition": "A group of participants not exposed to the presumed crucial value of the independent variable.",
+      "term": "Control group"
+    },
+    "-MuJ7QFr-_PdKH03I_Zx": {
+      "chapter": 4,
+      "definition": "Individuals serve as their own controls.",
+      "term": "Single-­subject experimental design"
+    },
+    "-MuJ7QFsisfcjpmfghuB": {
+      "chapter": 4,
+      "definition": "A separate group of individuals serves as the control for the experimental group.",
+      "term": "Group experimental design"
+    },
+    "-MuJ7QHAZgJj2lFyGtY7": {
+      "chapter": 4,
+      "definition": "The goals, procedures, and results of an intervention are socially acceptable to the client, the behavior analyst, and society.",
+      "term": "Social validity"
+    },
+    "-MuJ7QHB6LmE8cDYgOJ5": {
+      "chapter": 4,
+      "definition": "The behavior being measured, the dependent variable.",
+      "term": "Target behavior"
+    },
+    "-MuJ7QHCdOFqSEuCf82f": {
+      "chapter": 4,
+      "definition": "Two or more independent variables have changed at the same time, so it is not possible to determine which of those variables caused the changes in the dependent variable.",
+      "term": "Confounded variables"
+    },
+    "-MuJ7QHCdOFqSEuCf82g": {
+      "chapter": 4,
+      "definition": "Lack of confounding variables.",
+      "term": "Internal validity"
+    },
+    "-MuJ7QHDu9XA_3VGCi2d": {
+      "chapter": 4,
+      "definition": "The addition or change of several independent variables at the same time to achieve a desired result, without testing the effects of each variable individually.",
+      "term": "Treatment (intervention) package"
+    },
+    "-MuJ7QHEHYtTzP4pkMuZ": {
+      "chapter": 4,
+      "definition": "An experimental design in which we reverse the intervention and baseline conditions to assess the effects of those conditions.",
+      "term": "Reversal design"
+    },
+    "-MuJ7QHEHYtTzP4pkMu_": {
+      "chapter": 4,
+      "definition": "An experimental design in which the replications involve interventions with criteria of differing values.",
+      "term": "Changing-­criterion design"
+    },
+    "-MuJ7QHFfEIYwfx6lFxs": {
+      "chapter": 4,
+      "definition": "An experimental design in which the replications involve presenting different values of the independent variable in an alternating sequence under the same general conditions or in the same experimental phase, while measuring the same dependent variables.",
+      "term": "Alternating-­treatments design"
+    },
+    "-MuJ7QHGE2uABOt68hc7": {
+      "chapter": 4,
+      "definition": "A condition not containing the presumed crucial value of the independent variable.",
+      "term": "Control condition"
+    },
+    "-MuJ7QHHX6Ishivl_myA": {
+      "chapter": 4,
+      "definition": "The extent to which the conclusions of an experiment apply to a wide variety of conditions.",
+      "term": "External validity"
+    },
+    "-MuJ7QHHX6Ishivl_myB": {
+      "chapter": 5,
+      "definition": "The philosophy that the subject matter of psychology is the study of the effects of environmental variables on behavior, largely through experimental analysis.",
+      "term": "Behaviorism"
+    },
+    "-MuJ7QHI6V_9G7c2jLy7": {
+      "chapter": 5,
+      "definition": "The philosophy that behaviorism should only deal with events that two or more scientists can observe.",
+      "term": "Methodological behaviorism"
+    },
+    "-MuJ7QHJU1IVitMFKPf2": {
+      "chapter": 5,
+      "definition": "The philosophy that behaviorism can consider many private events as behavior to which the principles of behavior apply.",
+      "term": "Radical behaviorism"
+    },
+    "-MuJ7QHJU1IVitMFKPf3": {
+      "chapter": 5,
+      "definition": "The philosophy that the mind controls behavior.",
+      "term": "Mentalism"
+    },
+    "-MuJ7QHLKFTkR45Kyi-9": {
+      "chapter": 5,
+      "definition": "The source of cognitive skills or those cognitive skills themselves.",
+      "term": "Mind"
+    },
+    "-MuJ7QHNDlfaH-eTv5xA": {
+      "chapter": 5,
+      "definition": "Knowledge comes from our senses.",
+      "term": "Empiricism"
+    },
+    "-MuJ7QHOUu3f48FIvq5u": {
+      "chapter": 5,
+      "definition": "All events and all things have a cause.",
+      "term": "Determinism"
+    },
+    "-MuJ7QHPXcjpwTNtvEZN": {
+      "chapter": 5,
+      "definition": "The use of no unnecessary concepts, principles, or assumptions.",
+      "term": "Parsimony"
+    },
+    "-MuJ7QHQxHZ1o3pqPzOR": {
+      "chapter": 5,
+      "definition": "The manipulation of events or conditions to evaluate their effects.",
+      "term": "Experimentation"
+    },
+    "-MuJ7QIlb0mcRNT9zEtq": {
+      "chapter": 5,
+      "definition": "Research should have useful results.",
+      "term": "Pragmatism"
+    },
+    "-MuJ7QInGSGjXVSAczKW": {
+      "chapter": 5,
+      "definition": "Characteristics of species, behavior, and societies are selected by their consequences.",
+      "term": "Selectionism"
+    },
+    "-MuJ7QIojw-3dl3kNa0n": {
+      "chapter": 5,
+      "definition": "If a dead man can do it, it probably isn’t behavior.",
+      "term": "Dead-­man test"
+    },
+    "-MuJ7QIp7lHFANS19OB6": {
+      "chapter": 5,
+      "definition": "A muscular, glandular, or neuro-electrical activity.",
+      "term": "Behavior"
+    },
+    "-MuJ7QIp7lHFANS19OB7": {
+      "chapter": 5,
+      "definition": "The study of the principles of behavior.",
+      "term": "Behavior analysis"
+    },
+    "-MuJ7QIqhE54xHG-Foc4": {
+      "chapter": 5,
+      "definition": "The use of experimental research to discover the effects of environmental variables on behavior, resulting in the basic principles of behavior.",
+      "term": "Experimental analysis of behavior"
+    },
+    "-MuJ7QIrzvDg-BsjR55_": {
+      "chapter": 5,
+      "definition": "The use of experimental research to discover ways to use the basic principles of behavior to solve socially significant problems.",
+      "term": "Applied behavior analysis"
+    },
+    "-MuJ7QIrzvDg-BsjR55a": {
+      "chapter": 5,
+      "definition": "The use of the basic and applied principles of behavior to solve socially significant problems.",
+      "term": "Professional practice guided by the science of behavior analysis"
+    },
+    "-MuJ7QIskMMm5tSBciG4": {
+      "chapter": 5,
+      "definition": "A set of skills.",
+      "term": "Repertoire"
+    },
+    "-MuJ7QIuf1AQeD2ETpj4": {
+      "chapter": 5,
+      "definition": "To call an invented explanation a thing.",
+      "term": "Error of reification"
+    },
+    "-MuJ7QIvZ7RXyKss8J-_": {
+      "chapter": 5,
+      "definition": "An erroneous view that human problem behavior is a mere symptom of an underlying psychological condition.",
+      "term": "Medical-­model myth"
+    },
+    "-MuJ7QIw7NIBPabz8iCp": {
+      "chapter": 5,
+      "definition": "Applied, behavioral, analytic, technological, conceptually systematic, effective, and general.",
+      "term": "Seven dimensions of applied behavior analysis"
+    },
+    "-MuJ7QIw7NIBPabz8iCq": {
+      "chapter": 6,
+      "definition": "A stimulus that increases the future frequency of a response it follows",
+      "term": "Positive Reinforcer"
+    },
+    "-MuJ7QIx1hDjU0dmqFLl": {
+      "chapter": 6,
+      "definition": "Before spending much time trying to reinforce behavior, make sure you have a true reinforcer.",
+      "term": "Check the assumed reinforcer first"
+    },
+    "-MuJ7QIyIEZHm8_pQtAh": {
+      "chapter": 6,
+      "definition": "The response itself automatically produces the reinforcer.",
+      "term": "Automatic reinforcement"
+    },
+    "-MuJ7QIyIEZHm8_pQtAi": {
+      "chapter": 6,
+      "definition": "Another person (or organism) provides the reinforcer.",
+      "term": "Socially mediated reinforcement"
+    },
+    "-MuJ7QIzG8q9K1TKoUeq": {
+      "chapter": 6,
+      "definition": "The occasion for a response, the response, and the outcome of the response.",
+      "term": "Behavioral contingency"
+    },
+    "-MuJ7QJ-m3NXyV5Cx9FI": {
+      "chapter": 6,
+      "definition": "With nonverbal organisms, don’t say expects, knows, thinks, figures out, in order to (or so that he, she, or it could . . .), tries to, makes the connection, associates, learns that, imagines, or understands. With any organisms, don’t say wants.",
+      "term": "Don’t say rule."
+    },
+    "-MuJ7QJ0VEflAu2G4l2Q": {
+      "chapter": 6,
+      "definition": "Reinforce behavior, not people.",
+      "term": "Reinforce behavior"
+    },
+    "-MuJ7QJ0VEflAu2G4l2R": {
+      "chapter": 7,
+      "definition": "A stimulus that increases the future frequency of a response that its removal (termination) follows.",
+      "term": "Negative reinforcer (aversive stimulus)"
+    },
+    "-MuJ7QJ2a-rgQjzMJCN0": {
+      "chapter": 7,
+      "definition": "The response-contingent removal of a negative reinforcer resulting in an increased frequency of that response.",
+      "term": "Negative reinforcement contingency (escape)"
+    },
+    "-MuJ7QJ4p5zdHwD3N2lp": {
+      "chapter": 7,
+      "definition": "An assessment of the contingencies responsible for problem behaviors.",
+      "term": "Functional assessment"
+    },
+    "-MuJ7QKI5_1GyM2J_GN-": {
+      "chapter": 7,
+      "definition": "In escaping the perpetrator’s aversive behavior, the victim unintentionally reinforces that aversive behavior.",
+      "term": "Sick social cycle (victim’s negative reinforcement model)"
+    },
+    "-MuJ7QKJQty6RPSoVCFs": {
+      "chapter": 8,
+      "definition": "A stimulus that decreases the future frequency of a response that its presentation follows.",
+      "term": "Punisher (aversive stimulus)"
+    },
+    "-MuJ7QKMCCmstY0CR-hk": {
+      "chapter": 8,
+      "definition": "The response-­contingent presentation of a punisher resulting in a decreased frequency of that response.",
+      "term": "Positive punishment contingency (punishment)"
+    },
+    "-MuJ7QKMCCmstY0CR-hl": {
+      "chapter": 8,
+      "definition": "A contingency on inappropriate behavior requiring the person to engage in an effortful response that more than corrects the effects of the inappropriate behavior.",
+      "term": "Overcorrection"
+    },
+    "-MuJ7QKNmOoenr4r8HLF": {
+      "chapter": 8,
+      "definition": "The perpetrator’s aversive behavior punishes the victim’s appropriate behavior, and the victim’s stopping the appropriate behavior unintentionally reinforces that aversive behavior.",
+      "term": "Sick social cycle (victim’s punishment model)"
+    },
+    "-MuJ7QKO25KOJUUredM1": {
+      "chapter": 9,
+      "definition": "Response-contingent removal of a reinforcer resulting in a decreased frequency of that response.",
+      "term": "Negative punishment contingency (penalty)"
+    },
+    "-MuJ7QKP-mcHViIagm3R": {
+      "chapter": 9,
+      "definition": "The response-­contingent removal of a tangible reinforcer resulting in a decreased frequency of that response.",
+      "term": "Response-­cost contingency"
+    },
+    "-MuJ7QKP-mcHViIagm3S": {
+      "chapter": 9,
+      "definition": "The response-contingent removal of access to a reinforcer resulting in a decreased frequency of that response.",
+      "term": "Time-out contingency"
+    },
+    "-MuJ7QKQ8HhXkKGn491-": {
+      "chapter": 9,
+      "definition": "An experimental design in which we reverse the intervention and baseline conditions to assess the effects of those conditions.",
+      "term": "Reversal design"
+    },
+    "-MuJ7QKQ8HhXkKGn4910": {
+      "chapter": 10,
+      "definition": "Stopping the positive or negative reinforcement contingency for a previously reinforced response causes the response frequency to decrease ",
+      "term": "Extinction"
+    },
+    "-MuJ7QKRfHRYhM2LaaiZ": {
+      "chapter": 10,
+      "definition": "A temporary recovery of the extinguished behavior",
+      "term": "Spontaneous Recovery"
+    },
+    "-MuJ7QKSEkufVh60OQy1": {
+      "chapter": 10,
+      "definition": "Stopping the positive or negative punishment contingency for a previously punished response causes the response frequency to increase to its frequency before the positive or negative punishment contingency.",
+      "term": "Recovery from punishment"
+    },
+    "-MuJ7QKT0FhaHHyJBfXy": {
+      "chapter": 10,
+      "definition": "Consent to intervene in a way that is experimental or risky. The participant or guardian is informed of the risks and benefits and of the right to stop the intervention.",
+      "term": "Informed consent"
+    },
+    "-MuJ7QKU0KbyIAu0bMSG": {
+      "chapter": 11,
+      "definition": "An analysis of complex behavior and sequences of behavior into their component responses. ",
+      "term": "Task Analysis"
+    },
+    "-MuJ7QKU0KbyIAu0bMSH": {
+      "chapter": 11,
+      "definition": "Sometimes you need to make reinforcers and feedback contingent on the component responses of the process, not just the product (outcome).",
+      "term": "Process vs. product"
+    },
+    "-MuJ7QKVHdM81KLHyK4v": {
+      "chapter": 11,
+      "definition": "The sequence (path of movement), form, or location of components of a response relative to the rest of the body.",
+      "term": "Response topography"
+    },
+    "-MuJ7QKWbMyY-TYTnKd_": {
+      "chapter": 11,
+      "definition": "The time between the signal or opportunity for a response and the beginning of that response.",
+      "term": "Latency"
+    },
+    "-MuJ7QKWbMyY-TYTnKda": {
+      "chapter": 11,
+      "definition": "The time from the beginning to the end of a response.",
+      "term": "Duration"
+    },
+    "-MuJ7QKXk-7d9Lc8DiSz": {
+      "chapter": 11,
+      "definition": "The physical properties of a response.",
+      "term": "Response dimensions"
+    },
+    "-MuJ7QKY8gJFLreRspIf": {
+      "chapter": 11,
+      "definition": "Reinforcement is contingent on a behavior that is incompatible with another behavior.",
+      "term": "Differential reinforcement of incompatible behavior (DRI)"
+    },
+    "-MuJ7QKY8gJFLreRspIg": {
+      "chapter": 11,
+      "definition": "A set of responses that serve the same function (produce the same outcome).",
+      "term": "Response class"
+    },
+    "-MuJ7QKZFJ4G0EkMJLQS": {
+      "chapter": 11,
+      "definition": "Reinforcing one set of responses and not reinforcing another set of responses.",
+      "term": "Differential reinforcement"
+    },
+    "-MuJ7QK_Ff62UiS29bLp": {
+      "chapter": 11,
+      "definition": "Punishing one set of responses and not punishing another set of responses.",
+      "term": "Differential-­punishment procedure"
+    },
+    "-MuJ7QK_Ff62UiS29bLq": {
+      "chapter": 11,
+      "definition": "A reinforcer is presented after a fixed interval of time if the response of interest has not occurred during that interval.",
+      "term": "Differential reinforcement of other behavior (DRO)"
+    },
+    "-MuJ7QLtpfDnq4s-8yXE": {
+      "chapter": 12,
+      "definition": "A stimulus that is a reinforcer, though not as a result of pairing with another reinforcer.",
+      "term": "Unconditioned reinforcer"
+    },
+    "-MuJ7QLuEe1-gZpm8qFf": {
+      "chapter": 12,
+      "definition": "A stimulus that is a punisher, though not as a result of pairing with another punisher.",
+      "term": "Unconditioned punisher"
+    },
+    "-MuJ7QLvUzTkJ2KixKEn": {
+      "chapter": 12,
+      "definition": "A stimulus that is a reinforcer because it has been paired with another reinforcer.",
+      "term": "Conditioned reinforcer (secondary reinforcer)"
+    },
+    "-MuJ7QLwmnCY1sPWJI8s": {
+      "chapter": 12,
+      "definition": "The pairing of a neutral stimulus with a reinforcer or punisher.",
+      "term": "Pairing procedure"
+    },
+    "-MuJ7QLwmnCY1sPWJI8t": {
+      "chapter": 12,
+      "definition": "The pairing procedure converts a neutral stimulus into a conditioned reinforcer or conditioned punisher.",
+      "term": "Value ­altering principle"
+    },
+    "-MuJ7QLxVqaCkPcugmPi": {
+      "chapter": 12,
+      "definition": "A conditioned reinforcer that is a reinforcer because it has been paired with a variety of other reinforcers.",
+      "term": "Generalized conditioned reinforcer (generalized secondary reinforcer)"
+    },
+    "-MuJ7QLyh73PzwgwMM4t": {
+      "chapter": 12,
+      "definition": "A system of generalized conditioned reinforcers in which the organism that receives those generalized reinforcers can save them and exchange them for a variety of backup reinforcers later.",
+      "term": "Token economy"
+    },
+    "-MuJ7QLyh73PzwgwMM4u": {
+      "chapter": 12,
+      "definition": "A stimulus that is a punisher because it has been paired with another punisher.",
+      "term": "Conditioned punisher"
+    },
+    "-MuJ7QLzl4NmlvVVS108": {
+      "chapter": 12,
+      "definition": "Elements of a stimulus have their value or function only when they are combined; otherwise, the individual elements may be neutral.",
+      "term": "Conditional stimulus"
+    },
+    "-MuJ7QLzl4NmlvVVS109": {
+      "chapter": 13,
+      "definition": "Withholding a reinforcer increases its effectiveness.",
+      "term": "Deprivation"
+    },
+    "-MuJ7QM-xDaMfM_6e7kv": {
+      "chapter": 13,
+      "definition": "Consuming a large amount of a reinforcer decreases its effectiveness.",
+      "term": "Satiation"
+    },
+    "-MuJ7QM0rfRYVX5rXP5Q": {
+      "chapter": 13,
+      "definition": "An operation that affects the effectiveness of a reinforcer.",
+      "term": "Motivating operation (MO)"
+    },
+    "-MuJ7QM2GoMaPETMPapc": {
+      "chapter": 13,
+      "definition": "An operation that increases the effectiveness of a reinforcer.",
+      "term": "Establishing operation (EO)"
+    },
+    "-MuJ7QM2GoMaPETMPapd": {
+      "chapter": 13,
+      "definition": "An operation that decreases the effectiveness of a reinforcer.",
+      "term": "Abolishing operation (AO)"
+    },
+    "-MuJ7QM3Ag0vjGSCkhVB": {
+      "chapter": 13,
+      "definition": "Negative reinforcers and extinction are motivating operations for aggression reinforcers. Aggression reinforcer. A reinforcing stimulus resulting from acts of aggression.",
+      "term": "Aggression principle"
+    },
+    "-MuJ7QNRlM-OQqpZ7fBu": {
+      "chapter": 13,
+      "definition": "A reinforcing stimulus resulting from acts of aggression.",
+      "term": "Aggression reinforcer"
+    },
+    "-MuJ7QNUDcpxAqTbsaPx": {
+      "chapter": 13,
+      "definition": "A reinforcer for which repeated exposure is a motivating operation.",
+      "term": "Addictive reinforcer"
+    },
+    "-MuJ7QNXxNP21vIKvwFx": {
+      "chapter": 14,
+      "definition": "A stimulus in the presence of which a particular response will be reinforced or punished.",
+      "term": "Discriminative stimulus (SD)"
+    },
+    "-MuJ7QNXxNP21vIKvwFy": {
+      "chapter": 14,
+      "definition": "A stimulus in the presence of which a particular response will not be reinforced or punished.",
+      "term": "S-­delta (SΔ)"
+    },
+    "-MuJ7QNYkOS8Q4oW_XZw": {
+      "chapter": 14,
+      "definition": "Reinforcing or punishing a response in the presence of one stimulus and extinguishing it or allowing it to recover in the presence of another stimulus.",
+      "term": "Discrimination training procedure"
+    },
+    "-MuJ7QNZspZLxClOgQNo": {
+      "chapter": 14,
+      "definition": "The occurrence of a response more frequently in the presence of one stimulus than in the presence of another, usually as a result of a discrimination training procedure.",
+      "term": "Stimulus discrimination (stimulus control)"
+    },
+    "-MuJ7QN_t0uWWCMwKXTX": {
+      "chapter": 14,
+      "definition": "The planned use of behavioral contingencies, differential reinforcement, and discrimination training in the student’s everyday environment.",
+      "term": "Incidental teaching"
+    },
+    "-MuJ7QNbT4e7WbyeToVv": {
+      "chapter": 14,
+      "definition": "A supplemental stimulus that raises the probability of a correct response.",
+      "term": "Prompt"
+    },
+    "-MuJ7QNbT4e7WbyeToVw": {
+      "chapter": 14,
+      "definition": "That part of the environment the organism operates (manipulates).",
+      "term": "Operandum (manipulandum)"
+    },
+    "-MuJ7QNcg7yCNz8xRE8R": {
+      "chapter": 14,
+      "definition": "-S∆ Test\n--Is there also an S∆? If not, you don't have an SD.\n\n-Same before condition test\n--Is the before condition the same for both SD & S∆?\n\n-Response test\n-- Is the response the same for SD & S∆?\n\n-Extinction/recovery test\n--Is the S∆  contingency always escape or recovery?\n\n-Operandum test\n--Does the SD differ from the operandum?\n\n-Different before condition test\n--Does the SD differ from the before condition?",
+      "term": "Criteria for Diagramming Discriminated Contingencies"
+    },
+    "-MuJ7QNd779GA2rF80-H": {
+      "chapter": 15,
+      "definition": "Reinforcing or punishing a response in the presence of one stimulus class and extinguishing it or allowing it to recover in the presence of another stimulus class.",
+      "term": "Concept training"
+    },
+    "-MuJ7QNd779GA2rF80-I": {
+      "chapter": 15,
+      "definition": "A set of stimuli, all of which have some common physical property.",
+      "term": "Stimulus class (concept)"
+    },
+    "-MuJ7QNeFOxExWH2toxj": {
+      "chapter": 15,
+      "definition": "The behavioral contingencies in the presence of one stimulus affect the frequency of the response in the presence of another stimulus.",
+      "term": "Stimulus generalization"
+    },
+    "-MuJ7QNfjoxb137LSDI2": {
+      "chapter": 15,
+      "definition": "Responding occurs more often in the presence of one stimulus class and less often in the presence of another stimulus class because of concept training.",
+      "term": "Conceptual stimulus control (conceptual control)"
+    },
+    "-MuJ7QNg4iQKAH-6gkuL": {
+      "chapter": 15,
+      "definition": "The physical properties of a stimulus.",
+      "term": "Stimulus dimensions"
+    },
+    "-MuJ7QNg4iQKAH-6gkuM": {
+      "chapter": 15,
+      "definition": "At first, the SD and S∆ differ along at least one irrelevant dimension, as well as the relevant dimensions. Then the difference between the SD and S∆ is reduced along all but the relevant dimensions, until the SD and S∆ differ along only those relevant dimensions.",
+      "term": "Fading procedure"
+    },
+    "-MuJ7QNheA-AHlUCWH_j": {
+      "chapter": 15,
+      "definition": "The use of a fading procedure to establish a discrimination, with no errors during the training.",
+      "term": "Errorless discrimination procedure"
+    },
+    "-MuJ7QNheA-AHlUCWH_k": {
+      "chapter": 15,
+      "definition": "A gradient of responding showing an increase in stimulus control as the test stimulus becomes less similar to the training stimulus.",
+      "term": "Stimulus-­generalization gradient"
+    },
+    "-MuJ7QNia6xctW728agI": {
+      "chapter": 15,
+      "definition": "The criteria for measurement are not completely specified in physical terms or the event being measured is a private, inner experience.",
+      "term": "Subjective measure"
+    },
+    "-MuJ7QNjTSiSE8NZqaCf": {
+      "chapter": 15,
+      "definition": "The criteria for measurement are completely specified in physical terms and the event being measured is public and therefore observable by more than one person.",
+      "term": "Objective measure"
+    },
+    "-MuJ7QNkjv_UTUD6k1QC": {
+      "chapter": 15,
+      "definition": "Selecting a comparison stimulus corresponding to a sample stimulus.",
+      "term": "Matching to sample"
+    },
+    "-MuJ7QOzS9S17diVx0yY": {
+      "chapter": 16,
+      "definition": "The form of the behavior of the imitator is controlled by similar behavior of the model.",
+      "term": "Imitation"
+    },
+    "-MuJ7QP-4pAaEUHKOWTw": {
+      "chapter": 16,
+      "definition": "The trainer physically moves the trainee’s body in an approximation of the desired response.",
+      "term": "Physical prompt (physical guidance)"
+    },
+    "-MuJ7QP0z1ij7KLR_c8B": {
+      "chapter": 16,
+      "definition": "Imitation of the response of a model without previous reinforcement of imitation of that specific response.",
+      "term": "Generalized imitation"
+    },
+    "-MuJ7QP1U774XpVp9dTM": {
+      "chapter": 16,
+      "definition": "A supplemental verbal stimulus that raises the probability of a correct response.",
+      "term": "Verbal prompt"
+    },
+    "-MuJ7QP4suFIALkrP4cs": {
+      "chapter": 16,
+      "definition": "Generalized imitative responses occur because they automatically produce imitative reinforcers.",
+      "term": "Theory of generalized imitation"
+    },
+    "-MuJ7QP5mnttj5lrCIcF": {
+      "chapter": 16,
+      "definition": "Stimuli arising from the match between the behavior of the imitator and the behavior of the model that function as reinforcers.",
+      "term": "Imitative reinforcers"
+    },
+    "-MuJ7QP6oUeCht99y4ZW": {
+      "chapter": 17,
+      "definition": "Response-­contingent prevention of a negative reinforcer resulting in an increased frequency of that response.",
+      "term": "Avoidance contingency"
+    },
+    "-MuJ7QP7_3wAiuHPtvVY": {
+      "chapter": 17,
+      "definition": "Response-­contingent prevention of loss of a reinforcer resulting in an increased frequency of that response.",
+      "term": "Avoidance-­of-­loss contingency"
+    },
+    "-MuJ7QP7_3wAiuHPtvVZ": {
+      "chapter": 17,
+      "definition": "A stimulus that precedes a negative reinforcer and therefore becomes a conditioned negative reinforcer.",
+      "term": "Warning stimulus"
+    },
+    "-MuJ7QP9Ozb97lNPLK2c": {
+      "chapter": 18,
+      "definition": "Behavior not in the repertoire or not occurring at the desired frequency; the goal of the intervention.",
+      "term": "Terminal behavior"
+    },
+    "-MuJ7QPAH12ovfH-OcmK": {
+      "chapter": 18,
+      "definition": "The frequency of responding before reinforcement.",
+      "term": "Operant level"
+    },
+    "-MuJ7QPAH12ovfH-OcmL": {
+      "chapter": 18,
+      "definition": "Behavior that resembles the terminal behavior along some meaningful dimension and occurs at least with a minimal frequency.",
+      "term": "Initial behavior"
+    },
+    "-MuJ7QPBw0bzMx4Cd0TV": {
+      "chapter": 18,
+      "definition": "Behavior that more closely approximates the terminal behavior.",
+      "term": "Intermediate behavior"
+    },
+    "-MuJ7QQYIj4q0Q2_-sOW": {
+      "chapter": 18,
+      "definition": "The differential reinforcement of only the behavior that more and more closely resembles the terminal behavior.",
+      "term": "Shaping with reinforcement"
+    },
+    "-MuJ7QQZgM7RQ6-q3z8h": {
+      "chapter": 18,
+      "definition": "The differential punishment of all behavior except that which more and more closely resembles the terminal behavior.",
+      "term": "Shaping with punishment"
+    },
+    "-MuJ7QQ_yGRCDKnEHsEP": {
+      "chapter": 18,
+      "definition": "Shaping that involves no change in the value of the reinforcer, as performance more and more closely resembles the terminal behavior.",
+      "term": "Fixed-­outcome shaping"
+    },
+    "-MuJ7QQ_yGRCDKnEHsEQ": {
+      "chapter": 18,
+      "definition": "Shaping that involves a change in the value of the reinforcer, as performance more and more closely resembles the terminal behavior.",
+      "term": "Variable­ outcome shaping"
+    },
+    "-MuJ7QQaCTxV2CDZv6aH": {
+      "chapter": 19,
+      "definition": "A sequence of stimuli and responses. Each response produces a stimulus that reinforces the preceding response and is an SD or operandum for the following response.",
+      "term": "Behavioral chain"
+    },
+    "-MuJ7QQbLRjKuS51XMf4": {
+      "chapter": 19,
+      "definition": "A stimulus in a behavioral chain reinforces the response that precedes it and is an SD or operandum for the following response.",
+      "term": "Dual-­functioning chained stimuli"
+    },
+    "-MuJ7QQbLRjKuS51XMf5": {
+      "chapter": 19,
+      "definition": "The establishment of the first link in a behavioral chain, with the addition of successive links, until the final link is acquired.",
+      "term": "Forward chaining"
+    },
+    "-MuJ7QQcDQduzMQrkVl6": {
+      "chapter": 19,
+      "definition": "The establishment of the final link in a behavioral chain, with the addition of preceding links until the first link is acquired.",
+      "term": "Backward chaining"
+    },
+    "-MuJ7QQdGCLJDpSunrrZ": {
+      "chapter": 19,
+      "definition": "The simultaneous training of all links in a behavioral chain.",
+      "term": "Total-­task presentation"
+    },
+    "-MuJ7QQeXIoqwSLILzkx": {
+      "chapter": 20,
+      "definition": "A reinforcer follows each response.",
+      "term": "Continuous reinforcement (CRF)"
+    },
+    "-MuJ7QQfX1sN_a0SIGlh": {
+      "chapter": 20,
+      "definition": "Reinforcement schedule in which a reinforcer follows the response only once in a while.",
+      "term": "Intermittent reinforcement"
+    },
+    "-MuJ7QQhACWB2Gieu3vz": {
+      "chapter": 20,
+      "definition": "The way reinforcement occurs because of the number of responses, time since reinforcement, time between responses, and stimulus conditions.",
+      "term": "Schedule of reinforcement"
+    },
+    "-MuJ7QQiJzewhHtVI8Xd": {
+      "chapter": 20,
+      "definition": "A reinforcer is contingent on the last of a fixed number of responses.",
+      "term": "Fixed-­ratio (FR) schedule of reinforcement"
+    },
+    "-MuJ7QQiJzewhHtVI8Xe": {
+      "chapter": 20,
+      "definition": "After a response is reinforced, no responding occurs for a period of time, then responding occurs at a high, steady rate until the next reinforcer is delivered.",
+      "term": "Fixed-­ratio pattern of responding"
+    },
+    "-MuJ7QS7Nk1MWmPf9dkp": {
+      "chapter": 20,
+      "definition": "A reinforcer is contingent on the last of a variable number of responses.",
+      "term": "Variable­ ratio (VR) schedule of reinforcement"
+    },
+    "-MuJ7QS8md7yAEkTyGjV": {
+      "chapter": 20,
+      "definition": "Variable-ratio schedules produce a high rate of responding, with almost no post-­ reinforcement pausing.",
+      "term": "Variable-ratio pattern of responding"
+    },
+    "-MuJ7QS8md7yAEkTyGjW": {
+      "chapter": 20,
+      "definition": "The variable the experimenter systematically manipulates to influence the dependent variable.",
+      "term": "Independent variable"
+    },
+    "-MuJ7QS9AgZbqbqz39-s": {
+      "chapter": 20,
+      "definition": "A measure of the subject's behavior",
+      "term": "Dependent variable"
+    },
+    "-MuJ7QSAe7IEoIOnZjCv": {
+      "chapter": 21,
+      "definition": "A reinforcer is contingent on the first response after a fixed interval of time since the last opportunity for reinforcement.",
+      "term": "Fixed-­interval (FI) schedule of reinforcement"
+    },
+    "-MuJ7QSAe7IEoIOnZjCw": {
+      "chapter": 21,
+      "definition": "A fixed-­interval schedule often produces a scallop—a gradual increase in the rate of responding, with responding occurring at a high rate just before reinforcement is available. No responding occurs for some time after reinforcement.",
+      "term": "Fixed-­interval scallop (fixed-­interval pattern of responding)"
+    },
+    "-MuJ7QSBIkRtcx9JLhpD": {
+      "chapter": 21,
+      "definition": "A reinforcer is delivered after the passage of a fixed period of time, independent of the response.",
+      "term": "Fixed-­time schedule of reinforcer delivery"
+    },
+    "-MuJ7QSCTRwpKwreDJ3O": {
+      "chapter": 21,
+      "definition": "Behaving as if the response causes some specific outcome, when it really does not.",
+      "term": "Superstitious behavior"
+    },
+    "-MuJ7QSDjc8DG6JZT9MG": {
+      "chapter": 21,
+      "definition": "A reinforcer is contingent on the first response after a variable interval of time since the last opportunity for reinforcement.",
+      "term": "Variable-interval (VI) schedule of reinforcement."
+    },
+    "-MuJ7QSE1BlvIy640aKT": {
+      "chapter": 21,
+      "definition": "Variable-­interval schedules produce a moderate rate of responding, with almost no post-reinforcement pausing.",
+      "term": "Variable­-interval pattern of responding"
+    },
+    "-MuJ7QSE1BlvIy640aKU": {
+      "chapter": 21,
+      "definition": "The number of responses or the amount of time before a response extinguishes.",
+      "term": "Resistance to extinction"
+    },
+    "-MuJ7QSH4k1EcGq2ozZi": {
+      "chapter": 21,
+      "definition": "Intermittent reinforcement makes the response more resistant to extinction than does continuous reinforcement.",
+      "term": "Resistance to extinction and intermittent reinforcement"
+    },
+    "-MuJ7QSH4k1EcGq2ozZj": {
+      "chapter": 22,
+      "definition": "More than one contingency of reinforcement or punishment is available at the same time.",
+      "term": "Concurrent contingencies"
+    },
+    "-MuJ7QSIr33hOIG8FDUe": {
+      "chapter": 11,
+      "definition": "Withholding reinforcement for an inappropriate response, while providing reinforcement for an appropriate response.",
+      "term": "Differential reinforcement of alternative behavior (DRA)"
+    },
+    "-MuJ7QSJbXrRuBZxHATy": {
+      "chapter": 22,
+      "definition": "Problem behaviors are symptoms of an underlying mental illness. So if you get rid of one problem behavior (“symptom”), another will take its place, until you get rid of the underlying mental illness.",
+      "term": "Symptom substitution myth"
+    },
+    "-MuJ7QSJbXrRuBZxHATz": {
+      "chapter": 22,
+      "definition": "The addition or change of several independent variables at the same time to achieve a desired result, without testing the effect of each variable individually.",
+      "term": "Intervention (treatment) package"
+    },
+    "-MuJ7QSKhiQ8S5iHaC8v": {
+      "chapter": 22,
+      "definition": "When two different responses are each reinforced with a different schedule of reinforcement, the relative frequency of the two responses equals the relative value of reinforcement on the two schedules of reinforcement.",
+      "term": "Matching law"
+    },
+    "-MuJ7QSLw1XlopQEMPkj": {
+      "chapter": 23,
+      "definition": "The continuing of performance after it was first established.",
+      "term": "Performance maintenance"
+    },
+    "-MuJ7QSLw1XlopQEMPkk": {
+      "chapter": 23,
+      "definition": "Use an added reinforcement contingency to increase the rate of behavior. Then the behavior can be reinforced by natural reinforcement contingencies, and those natural contingencies can maintain that behavior.",
+      "term": "Behavior trap"
+    },
+    "-MuJ7QSMeMdmA9kRXNd7": {
+      "chapter": 23,
+      "definition": "Performance established at one time in one place now occurs in a different time and place.",
+      "term": "Transfer of training"
+    },
+    "-MuJ7QSMeMdmA9kRXNd8": {
+      "chapter": 24,
+      "definition": "Imitation of the vocal behavior of another speaker.",
+      "term": "Echoic"
+    },
+    "-MuJ7QSNkTFlCG4QCIHz": {
+      "chapter": 24,
+      "definition": "A request for a reinforcer.",
+      "term": "Mand"
+    },
+    "-MuJ7QSOWvx4Hf7LCSOf": {
+      "chapter": 24,
+      "definition": "Behavior under the stimulus control of a speaker.",
+      "term": "Listener behavior"
+    },
+    "-MuJ7QSOWvx4Hf7LCSOg": {
+      "chapter": 24,
+      "definition": "Labelling a stimulus.",
+      "term": "Tact"
+    },
+    "-MuJ7QSPwhIIoHkM-fCN": {
+      "chapter": 24,
+      "definition": "Novel verbal behavior that has not been directly trained.",
+      "term": "Generative verbal behavior"
+    },
+    "-MuJ7QSQk4Ypl3Kx7-0_": {
+      "chapter": 24,
+      "definition": "Behavior reinforced through the mediation of other persons.",
+      "term": "Verbal behavior"
+    },
+    "-MuJ7QTfuI5k1q8_AjCN": {
+      "chapter": 24,
+      "definition": "A verbal operant that modifies the effect of other verbal operants.",
+      "term": "Autoclitic"
+    },
+    "-MuJ7QTgVoOCM8NfGvi_": {
+      "chapter": 24,
+      "definition": "A verbal operant under the stimulus control of other verbal operants.",
+      "term": "Intraverbal"
+    },
+    "-MuJ7QThwO5zEuWgYAFL": {
+      "chapter": 24,
+      "definition": "When one stimulus is an SD for a response, then the stimulus associated with that response is also an SD for a response to the first stimulus, without explicit training to establish that other stimulus as an SD.",
+      "term": "Naming"
+    },
+    "-MuJ7QThwO5zEuWgYAFM": {
+      "chapter": 24,
+      "definition": "When a stimulus is an SD for one response, then the stimulus associated with that response will be an SD for the response associated with the first stimulus.",
+      "term": "Symmetry (symmetrical stimulus control)"
+    },
+    "-MuJ7QTiJxNLGq4jfrW-": {
+      "chapter": 24,
+      "definition": "When one stimulus is the SD for two different responses, then the stimulus associated with one of those two responses will be an SD for the other of those two responses.",
+      "term": "Transitivity"
+    },
+    "-MuJ7QTiJxNLGq4jfrW0": {
+      "chapter": 24,
+      "definition": "The matching of two identical stimuli; A=A.",
+      "term": "Reflexivity"
+    },
+    "-MuJ7QTmvClLO3YzrEMx": {
+      "chapter": 24,
+      "definition": "The training of stimuli using symbolic match to sample that produces stimulus equivalence.",
+      "term": "Stimulus-­equivalence training"
+    },
+    "-MuJ7QTp9a_Pl8V4ArsJ": {
+      "chapter": 24,
+      "definition": "Stimuli are equivalent, when they have symmetrical, transitive, and reflexive relations but do not have common physical properties.",
+      "term": "Stimulus equivalence"
+    },
+    "-MuJ7QTq5DKm3yDPFnJ3": {
+      "chapter": 24,
+      "definition": "The relation between two or more stimuli is derived from independent training with those stimuli and other stimuli with which they have a relation.",
+      "term": "Derived stimulus relation"
+    },
+    "-MuJ7QTrfJx5p-FayslZ": {
+      "chapter": 25,
+      "definition": "A description of a behavioral contingency",
+      "term": "Rule"
+    },
+    "-MuJ7QTs9Jjq4gkSQqQW": {
+      "chapter": 25,
+      "definition": "Behavior under the control of a direct-acting contingency",
+      "term": "Contingency-shaped behavior"
+    },
+    "-MuJ7QTs9Jjq4gkSQqQX": {
+      "chapter": 25,
+      "definition": "Behavior under the control of a rule",
+      "term": "Rule-governed behavior"
+    },
+    "-MuJ7QTtTaM9T5K5dxJQ": {
+      "chapter": 25,
+      "definition": "A contingency in which the outcome of the response reinforces or punishes that response.",
+      "term": "Direct-­acting contingency"
+    },
+    "-MuJ7QTtTaM9T5K5dxJR": {
+      "chapter": 25,
+      "definition": "A contingency that controls the response, though the outcome of the response does not reinforce or punish the response.",
+      "term": "Indirect-­acting contingency"
+    },
+    "-MuJ7QTuKCCdBm0Z7bTg": {
+      "chapter": 25,
+      "definition": "A contingency that does not control behavior.",
+      "term": "Ineffective contingency"
+    },
+    "-MuJ7QTuKCCdBm0Z7bTh": {
+      "chapter": 25,
+      "definition": "A change in the frequency of a response because of a rule describing the contingency.",
+      "term": "Rule-­governed analog"
+    },
+    "-MuJ7QTvcM02YAlav53J": {
+      "chapter": 25,
+      "definition": "Sometimes you need to make reinforcers and feedback contingent on the component responses of the process, not just the product.",
+      "term": "Process vs Product"
+    },
+    "-MuJ7QVD0AzRE4ERDRkM": {
+      "chapter": 25,
+      "definition": "An analysis of complex behavior and sequences of behavior into component responses",
+      "term": "Task Analysis"
+    },
+    "-MuJ7QVEOWfUEznpT7ms": {
+      "chapter": 25,
+      "definition": "Nonverbal stimuli or verbal statements contingent on past behavior that can guide future behavior.",
+      "term": "Feedback"
+    },
+    "-MuJ7QVFFLU6aliGEykG": {
+      "chapter": 26,
+      "definition": "Poor self-management occurs because immediate outcomes control our behavior better than delayed outcomes do.",
+      "term": "Mythical cause of poor self-management"
+    },
+    "-MuJ7QVFFLU6aliGEykH": {
+      "chapter": 26,
+      "definition": "Describe outcomes that are both sizable and probable. The delay isn’t crucial.",
+      "term": "Rules that are easy to follow"
+    },
+    "-MuJ7QVG46MwhYp2Bxqq": {
+      "chapter": 26,
+      "definition": "Describe outcomes that are either too small (though often of cumulative significance) or too improbable.",
+      "term": "Rules that are hard to follow"
+    },
+    "-MuJ7QVG46MwhYp2Bxqr": {
+      "chapter": 26,
+      "definition": "Poor self-­management results from poor control by rules describing outcomes that are either too small (though often of cumulative significance) or too improbable. The delay isn’t crucial.",
+      "term": "Real cause of poor self-­management"
+    },
+    "-MuJ7QVH6urcP7dtgFDp": {
+      "chapter": 26,
+      "definition": "The three crucial contingencies are the ineffective natural contingency, the effective, indirect-acting performance-management contingency, and the effective, direct-acting contingency.",
+      "term": "Three-contingency model of contingency contracting"
+    }
+  },
+  "users": {
+    "0QQILGBbdbVoPuxe0Tuetts06lx1": {
+      "scores": [
+        null,
+        {
+          "1677757003": {
+            "C_DateScore": "(2023-3-2,2)",
+            "I_DateScore": "(2023-3-2,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 2,
+            "date": 1677756940.635,
+            "incorrect": 1
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "0fhyb1ys37dESEqXcN4A5cMm6Qt1": {
+      "scores": {
+        "3": {
+          "1674653075": {
+            "C_DateScore": "(2023-1-25,9)",
+            "I_DateScore": "(2023-1-25,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 3,
+            "correct": 9,
+            "date": 1674653011.844,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "cbourn709@gmail.com"
+      }
+    },
+    "0pTfdEImmYXeHQiJUNaucNEFQ1B3": {
+      "scores": {
+        "1": {
+          "1644616460": {
+            "C_DateScore": "(2022-02-11,5)",
+            "I_DateScore": "(2022-02-11,6)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1644616396.376,
+            "incorrect": 6
+          }
+        },
+        "10": {
+          "1644637940": {
+            "C_DateScore": "(2022-2-11,39)",
+            "I_DateScore": "(2022-2-11,15)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 10,
+            "correct": 39,
+            "date": 1644637878.701,
+            "incorrect": 15
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Poop pant",
+        "where_to_send_results": "Jared@thunkable.com"
+      }
+    },
+    "1vzqPkQkwQPtd7DJx7uQNirLXxm2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Junior"
+      }
+    },
+    "2Pf7ygnveXYNCigwWroC7qD8agj2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "ellie.cox@vikings.berry.edu"
+      }
+    },
+    "33POILhJl7YkZI3jJ6JPRrec87K2": {
+      "scores": {
+        "26": {
+          "1656705206": {
+            "C_DateScore": "(2022-7-1,1)",
+            "I_DateScore": "(2022-7-1,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 26,
+            "correct": 1,
+            "date": 1656705142.649,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Jerbornelson@yahoo.com"
+      }
+    },
+    "42VIEWoCBMhLlHqtDxH6OOGG2ut2": {
+      "scores": {
+        "1": {
+          "1646260311": {
+            "C_DateScore": "(2022-3-2,2)",
+            "I_DateScore": "(2022-3-2,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 2,
+            "date": 1646260223.917,
+            "incorrect": 1
+          },
+          "1653674505": {
+            "C_DateScore": "(2022-5-27,5)",
+            "I_DateScore": "(2022-5-27,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1653674432.555,
+            "incorrect": 1
+          },
+          "1653675025": {
+            "C_DateScore": "(2022-5-27,4)",
+            "I_DateScore": "(2022-5-27,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 4,
+            "date": 1653674911.747,
+            "incorrect": 0
+          },
+          "1653675183": {
+            "C_DateScore": "(2022-5-27,3)",
+            "I_DateScore": "(2022-5-27,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1653675113.863,
+            "incorrect": 0
+          },
+          "1653675285": {
+            "C_DateScore": "(2022-5-27,3)",
+            "I_DateScore": "(2022-5-27,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1653675218.651,
+            "incorrect": 1
+          },
+          "1653675372": {
+            "C_DateScore": "(2022-5-27,2)",
+            "I_DateScore": "(2022-5-27,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 2,
+            "date": 1653675305.111,
+            "incorrect": 1
+          },
+          "1653678234": {
+            "C_DateScore": "(2022-5-27,5)",
+            "I_DateScore": "(2022-5-27,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1653678161.231,
+            "incorrect": 0
+          },
+          "1653678359": {
+            "C_DateScore": "(2022-5-27,3)",
+            "I_DateScore": "(2022-5-27,3)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1653678294.592,
+            "incorrect": 3
+          },
+          "1653678433": {
+            "C_DateScore": "(2022-5-27,3)",
+            "I_DateScore": "(2022-5-27,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1653678369.593,
+            "incorrect": 1
+          },
+          "1653944510": {
+            "C_DateScore": "(2022-5-30,5)",
+            "I_DateScore": "(2022-5-30,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1653944434.287,
+            "incorrect": 1
+          },
+          "1653944660": {
+            "C_DateScore": "(2022-5-30,5)",
+            "I_DateScore": "(2022-5-30,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1653944590.112,
+            "incorrect": 0
+          },
+          "1653944969": {
+            "C_DateScore": "(2022-5-30,10)",
+            "I_DateScore": "(2022-5-30,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 10,
+            "date": 1653944903.481,
+            "incorrect": 1
+          },
+          "1654017650": {
+            "C_DateScore": "(2022-5-31,3)",
+            "I_DateScore": "(2022-5-31,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1654017529.514,
+            "incorrect": 1
+          },
+          "1654018883": {
+            "C_DateScore": "(2022-5-31,4)",
+            "I_DateScore": "(2022-5-31,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 4,
+            "date": 1654018819.008,
+            "incorrect": 1
+          },
+          "1654018962": {
+            "C_DateScore": "(2022-5-31,3)",
+            "I_DateScore": "(2022-5-31,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1654018894.255,
+            "incorrect": 0
+          },
+          "1654019103": {
+            "C_DateScore": "(2022-5-31,4)",
+            "I_DateScore": "(2022-5-31,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 4,
+            "date": 1654019036.698,
+            "incorrect": 0
+          },
+          "1654019194": {
+            "C_DateScore": "(2022-5-31,4)",
+            "I_DateScore": "(2022-5-31,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 4,
+            "date": 1654019124.9,
+            "incorrect": 1
+          },
+          "1654019496": {
+            "C_DateScore": "(2022-5-31,4)",
+            "I_DateScore": "(2022-5-31,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 4,
+            "date": 1654019425.125,
+            "incorrect": 1
+          },
+          "1674249371": {
+            "C_DateScore": "(2023-1-20,3)",
+            "I_DateScore": "(2023-1-20,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1674249237.819,
+            "incorrect": 1
+          }
+        },
+        "2": {
+          "1654019639": {
+            "C_DateScore": "(2022-5-31,5)",
+            "I_DateScore": "(2022-5-31,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 5,
+            "date": 1654019575.799,
+            "incorrect": 1
+          },
+          "1654019723": {
+            "C_DateScore": "(2022-5-31,4)",
+            "I_DateScore": "(2022-5-31,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 4,
+            "date": 1654019660.548,
+            "incorrect": 0
+          },
+          "1655910271": {
+            "C_DateScore": "(2022-6-22,3)",
+            "I_DateScore": "(2022-6-22,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 3,
+            "date": 1655910198.382,
+            "incorrect": 1
+          },
+          "1655910880": {
+            "C_DateScore": "(2022-6-22,8)",
+            "I_DateScore": "(2022-6-22,3)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 8,
+            "date": 1655910801.578,
+            "incorrect": 3
+          },
+          "1655910973": {
+            "C_DateScore": "(2022-6-22,8)",
+            "I_DateScore": "(2022-6-22,6)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 8,
+            "date": 1655910905.394,
+            "incorrect": 6
+          }
+        },
+        "4": {
+          "1653592384": {
+            "C_DateScore": "(2022-5-26,2)",
+            "I_DateScore": "(2022-5-26,2)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 4,
+            "correct": 2,
+            "date": 1653592268.481,
+            "incorrect": 2
+          }
+        },
+        "6": {
+          "1655911103": {
+            "C_DateScore": "(2022-6-22,4)",
+            "I_DateScore": "(2022-6-22,8)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 6,
+            "correct": 4,
+            "date": 1655911040.957,
+            "incorrect": 8
+          }
+        },
+        "7": {
+          "1655909945": {
+            "C_DateScore": "(2022-6-22,3)",
+            "I_DateScore": "(2022-6-22,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 7,
+            "correct": 3,
+            "date": 1655909845.755,
+            "incorrect": 0
+          }
+        },
+        "26": {
+          "1653672785": {
+            "C_DateScore": "(2022-5-27,7)",
+            "I_DateScore": "(2022-5-27,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 26,
+            "correct": 7,
+            "date": 1653672691.067,
+            "incorrect": 0
+          },
+          "1653673001": {
+            "C_DateScore": "(2022-5-27,9)",
+            "I_DateScore": "(2022-5-27,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 26,
+            "correct": 9,
+            "date": 1653672921.929,
+            "incorrect": 0
+          },
+          "1653673215": {
+            "C_DateScore": "(2022-5-27,5)",
+            "I_DateScore": "(2022-5-27,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 26,
+            "correct": 5,
+            "date": 1653673135.755,
+            "incorrect": 0
+          },
+          "1653673300": {
+            "C_DateScore": "(2022-5-27,18)",
+            "I_DateScore": "(2022-5-27,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 26,
+            "correct": 18,
+            "date": 1653673235.646,
+            "incorrect": 0
+          },
+          "1653673642": {
+            "C_DateScore": "(2022-5-27,18)",
+            "I_DateScore": "(2022-5-27,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 26,
+            "correct": 18,
+            "date": 1653673570.299,
+            "incorrect": 0
+          },
+          "1673314255": {
+            "C_DateScore": "(2023-1-9,1)",
+            "I_DateScore": "(2023-1-9,2)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 26,
+            "correct": 1,
+            "date": 1673314182.195,
+            "incorrect": 2
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Dick Malott",
+        "where_to_send_results": "DickMalott@DickMalott.com"
+      }
+    },
+    "49U9Cln6ADSBbtsFQCbRnIWeUkf2": {
+      "scores": {
+        "6": {
+          "1657764412": {
+            "C_DateScore": "(2022-7-13,16)",
+            "I_DateScore": "(2022-7-13,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 6,
+            "correct": 16,
+            "date": 1657764349.426,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "katherineaclay@gmail.com"
+      }
+    },
+    "4SDU2tchEtMiIyQo5Za3fuhPxTq1": {
+      "scores": [
+        null,
+        {
+          "1645725071": {
+            "C_DateScore": "(2022-2-24,16)",
+            "I_DateScore": "(2022-2-24,4)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 16,
+            "date": 1645725002.252,
+            "incorrect": 4
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "63NjoOyUnNWhKVIQSDGm0INngeh2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "70Wfe91iXHVAjUnUpavsAsljzs52": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Heather",
+        "where_to_send_results": "hpoleon1@yahoo.com"
+      }
+    },
+    "79A41ovjMtZ77GgO9Kw4NFgR9Mo1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "rabiyaaffil@gmail.com"
+      }
+    },
+    "7s7RbanzNne7rnWf0eCScPKgdSD2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "8AsARcTCinZKnkwMCa0gOuiu4U03": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "8s2CvAg1pfO1fbSgrNqMOqIwWTF2": {
+      "scores": [
+        null,
+        {
+          "1663415755": {
+            "C_DateScore": "(2022-9-17,25)",
+            "I_DateScore": "(2022-9-17,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 25,
+            "date": 1663415686.528,
+            "incorrect": 1
+          },
+          "1666911381": {
+            "C_DateScore": "(2022-10-28,4)",
+            "I_DateScore": "(2022-10-28,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 4,
+            "date": 1666911317.68,
+            "incorrect": 0
+          },
+          "1666911461": {
+            "C_DateScore": "(2022-10-28,11)",
+            "I_DateScore": "(2022-10-28,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 11,
+            "date": 1666911391.1,
+            "incorrect": 0
+          }
+        },
+        {
+          "1666911811": {
+            "C_DateScore": "(2022-10-28,10)",
+            "I_DateScore": "(2022-10-28,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 10,
+            "date": 1666911747.91,
+            "incorrect": 1
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "k.strauss@associazioneumbrella.com"
+      }
+    },
+    "AC0VaGdgqFZOaKuo4vJuQ0Rg6Ek2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "allen03@allegheny.edu"
+      }
+    },
+    "APUaltolIkO6F4zWKN9nJSPpdWS2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Abby",
+        "where_to_send_results": "gkb1436@wmich.edu"
+      }
+    },
+    "AXOevO7yyjXfZa162SBaIWQlr3u1": {
+      "scores": {
+        "6": {
+          "1738163121": {
+            "C_DateScore": "(2025-1-29,15)",
+            "I_DateScore": "(2025-1-29,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 6,
+            "correct": 15,
+            "date": 1738163058.991,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "cconforti895@365.lakemichigancollege.edu"
+      }
+    },
+    "AYCjKcod0MQysT10eZtbNPbTBmx2": {
+      "scores": {
+        "2": {
+          "1674269745": {
+            "C_DateScore": "(2023-1-20,23)",
+            "I_DateScore": "(2023-1-20,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 23,
+            "date": 1674269683.347,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "anthony.defulio@wmich.edu"
+      }
+    },
+    "AnzN2BmU70QS7Pbb1gVODicxPEJ3": {
+      "scores": {
+        "1": {
+          "1664398706": {
+            "C_DateScore": "(2022-9-28,19)",
+            "I_DateScore": "(2022-9-28,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 19,
+            "date": 1664398638.246,
+            "incorrect": 1
+          }
+        },
+        "2": {
+          "1664399773": {
+            "C_DateScore": "(2022-9-28,26)",
+            "I_DateScore": "(2022-9-28,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 26,
+            "date": 1664399707.015,
+            "incorrect": 1
+          }
+        },
+        "3": {
+          "1664399882": {
+            "C_DateScore": "(2022-9-28,110)",
+            "I_DateScore": "(2022-9-28,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 3,
+            "correct": 110,
+            "date": 1664399819.366,
+            "incorrect": 0
+          }
+        },
+        "11": {
+          "1664400041": {
+            "C_DateScore": "(2022-9-28,33)",
+            "I_DateScore": "(2022-9-28,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 11,
+            "correct": 33,
+            "date": 1664399978.999,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "culbertson01@allegheny.edu"
+      }
+    },
+    "ApO5d5WR2tOilUwMxISwESaBGRe2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "B66PvlP6gJgbI5TRGzzVePifbFj2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Monee.judkins@vikings.berry.edu"
+      }
+    },
+    "BFZYN5XOCoZq025dmV3Wny0OcU82": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Bethany",
+        "where_to_send_results": "bethanychparker@gmail.com"
+      }
+    },
+    "CKqIn8kd1UWzG6q7qj1Nl809vof1": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "CiRJhzwB3taMzcmCLsTwealFeZU2": {
+      "scores": [
+        null,
+        {
+          "1686012088": {
+            "C_DateScore": "(2023-6-5,55)",
+            "I_DateScore": "(2023-6-5,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 55,
+            "date": 1686012025.949,
+            "incorrect": 1
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "bjhumbert2000@gmail.com"
+      }
+    },
+    "CqxDjdOQdSS9wyRQD4x6ZTCht8x2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "jennifercupps36@gmail.com"
+      }
+    },
+    "DEngNWpJNoOaOvTSuRAqDzAFXIP2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "EAcfbqaKZ6bd6JMFAYIu5svgyXb2": {
+      "scores": [
+        null,
+        {
+          "1656636729": {
+            "C_DateScore": "(2022-6-30,5)",
+            "I_DateScore": "(2022-6-30,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1656636664.624,
+            "incorrect": 0
+          }
+        },
+        {
+          "1656636858": {
+            "C_DateScore": "(2022-6-30,7)",
+            "I_DateScore": "(2022-6-30,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 7,
+            "date": 1656636793.481,
+            "incorrect": 0
+          }
+        },
+        {
+          "1656637365": {
+            "C_DateScore": "(2022-6-30,12)",
+            "I_DateScore": "(2022-6-30,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 3,
+            "correct": 12,
+            "date": 1656637302.269,
+            "incorrect": 0
+          },
+          "1656637524": {
+            "C_DateScore": "(2022-6-30,14)",
+            "I_DateScore": "(2022-6-30,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 3,
+            "correct": 14,
+            "date": 1656637459.506,
+            "incorrect": 0
+          }
+        },
+        {
+          "1656637643": {
+            "C_DateScore": "(2022-6-30,10)",
+            "I_DateScore": "(2022-6-30,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 4,
+            "correct": 10,
+            "date": 1656637581.321,
+            "incorrect": 0
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "TO",
+        "where_to_send_results": "Timobertein@gmail.com"
+      }
+    },
+    "EYe5ZsmWsXbO2PaDPmMzCyIrSij1": {
+      "scores": {
+        "4": {
+          "1677897613": {
+            "C_DateScore": "(2023-3-3,3)",
+            "I_DateScore": "(2023-3-3,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 4,
+            "correct": 3,
+            "date": 1677897547.148,
+            "incorrect": 1
+          },
+          "1677897684": {
+            "C_DateScore": "(2023-3-3,11)",
+            "I_DateScore": "(2023-3-3,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 4,
+            "correct": 11,
+            "date": 1677897617.087,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "russell.mariad@gmail.com"
+      }
+    },
+    "ExsbBsKnsadvZndU4oso4TmJYYx1": {
+      "scores": [
+        null,
+        {
+          "1663250707": {
+            "C_DateScore": "(2022-9-15,5)",
+            "I_DateScore": "(2022-9-15,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1663250644.746,
+            "incorrect": 0
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Ham.rob15@gmail.com"
+      }
+    },
+    "FGB3V7FyOPY4hN7AsmGZo3fkTp73": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Jen",
+        "where_to_send_results": "Jennifer.skundrich@gmail.com"
+      }
+    },
+    "FfKEIhXI5eZu5BGIqFZXfqaiy2A3": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "helinahoolma22@msn.com"
+      }
+    },
+    "G9ThOFNeaEZFa5S0VlrSckfCTfk1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "tenae90@gmail.com"
+      }
+    },
+    "GzXY8iofIUYjjhX5hWMQHqvFdvF2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "HyuC1DjefpUEoqJt7pmduKjC8r42": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Pamela.sawa@yahoo.com"
+      }
+    },
+    "IMQQmzzaFGV072C0OULasMhxsFT2": {
+      "scores": [
+        null,
+        {
+          "1662862923": {
+            "C_DateScore": "(2022-9-10,1)",
+            "I_DateScore": "(2022-9-10,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 1,
+            "date": 1662862859.593,
+            "incorrect": 1
+          },
+          "1662863000": {
+            "C_DateScore": "(2022-9-10,1)",
+            "I_DateScore": "(2022-9-10,3)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 1,
+            "date": 1662862932.228,
+            "incorrect": 3
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "brooklynnyy20@gmail.com"
+      }
+    },
+    "J5ATtKNyyrVvAZEspWe8Seen6lB2": {
+      "scores": [
+        null,
+        {
+          "1663652185": {
+            "C_DateScore": "(2022-9-20,5)",
+            "I_DateScore": "(2022-9-20,2)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1663652107.802,
+            "incorrect": 2
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Laura",
+        "where_to_send_results": "Laura.linik@gmail.com"
+      }
+    },
+    "JukTLEikbwQXirTzZLhLrNBTV9J2": {
+      "scores": {
+        "4": {
+          "1647525670": {
+            "C_DateScore": "(2022-3-17,0)",
+            "I_DateScore": "(2022-3-17,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 4,
+            "correct": 0,
+            "date": 1647525668.169,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Jared@thunkable.com"
+      }
+    },
+    "Jz79EMuISmO7oe9t5NADACaUa4H3": {
+      "scores": {
+        "10": {
+          "1660379947": {
+            "C_DateScore": "(2022-8-13,2)",
+            "I_DateScore": "(2022-8-13,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 10,
+            "correct": 2,
+            "date": 1660379882.34,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "KaUNk1Jj7ySi2AAlKJ84E5G3o4k1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Jared",
+        "where_to_send_results": "jafobij200@naluzotan.com"
+      }
+    },
+    "KeQphV6ormXrsfTdMKvhyu2WQeq2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "L9nEwIICcHSI6eOW3h7Tq19W2z42": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "LSc91OlLBxaxiPNKa6PZpEcbCVw2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "LzVgRrw02Yc5wM7Hm6h32vDI4go1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Mhernandez@lakemichigancollege.edu"
+      }
+    },
+    "MZflJrevDVgkTew5bJoIIeNVp4J2": {
+      "scores": {
+        "2": {
+          "1693452323": {
+            "C_DateScore": "(2023-8-30,7)",
+            "I_DateScore": "(2023-8-30,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 7,
+            "date": 1693452261.932,
+            "incorrect": 1
+          },
+          "1693487913": {
+            "C_DateScore": "(2023-8-31,15)",
+            "I_DateScore": "(2023-8-31,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 15,
+            "date": 1693487850.714,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "MspBryFEWxQOx0m802vWeqq9UWd2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Aleksabarenie222@gmail.com"
+      }
+    },
+    "NfZNxwyWfmWgbQOQwFIA9ugb1Fs2": {
+      "scores": [
+        null,
+        {
+          "1662674428": {
+            "C_DateScore": "(2022-9-8,6)",
+            "I_DateScore": "(2022-9-8,3)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 6,
+            "date": 1662674365.698,
+            "incorrect": 3
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "OMeA0bFSASdpQqGB1hpyrZcDEzt1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "josepablofunes@gmail.com"
+      }
+    },
+    "OZwbbZje5CORIJG1VO7E25m8mkh1": {
+      "scores": [
+        null,
+        {
+          "1674278731": {
+            "C_DateScore": "(2023-1-20,16)",
+            "I_DateScore": "(2023-1-20,3)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 16,
+            "date": 1674278651.024,
+            "incorrect": 3
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "landcruiserm@aol.com"
+      }
+    },
+    "OnoAw0nT9ATYyRhO4UKSdYwwq9q2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "OsEyMcBmeJdeMokYXhSaifSw2Li1": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "PicLklL6PNVR6oUw7DLc2HW7NTH2": {
+      "scores": [
+        null,
+        {
+          "1670642758": {
+            "C_DateScore": "(2022-12-9,19)",
+            "I_DateScore": "(2022-12-9,2)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 19,
+            "date": 1670642683.68,
+            "incorrect": 2
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Joeott3335@gmail.com"
+      }
+    },
+    "Pk7sqxkyYLRNaaq0xWh3IbTcLRf1": {
+      "scores": {
+        "15": {
+          "1678832381": {
+            "C_DateScore": "(2023-3-14,4)",
+            "I_DateScore": "(2023-3-14,3)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 15,
+            "correct": 4,
+            "date": 1678832320.08,
+            "incorrect": 3
+          },
+          "1678834744": {
+            "C_DateScore": "(2023-3-14,7)",
+            "I_DateScore": "(2023-3-14,3)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 15,
+            "correct": 7,
+            "date": 1678834683.253,
+            "incorrect": 3
+          }
+        },
+        "19": {
+          "1680043970": {
+            "C_DateScore": "(2023-3-28,13)",
+            "I_DateScore": "(2023-3-28,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 19,
+            "correct": 13,
+            "date": 1680043908.855,
+            "incorrect": 1
+          },
+          "1680044062": {
+            "C_DateScore": "(2023-3-28,21)",
+            "I_DateScore": "(2023-3-28,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 19,
+            "correct": 21,
+            "date": 1680043972.707,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Jaelyn.n.byrd@wmich.edu"
+      }
+    },
+    "PomKm0Tzq2RFu3gi0YIvBOmZOuz1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "kemadrigal@gmail.com"
+      }
+    },
+    "PujgLDJyKTMz9FScJW6j5owTQIM2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "Q7zoGApmXJRn3UOX1PfL9ScGwjq1": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "QtvTlmXMVqZct6InkmhHrA4ilJf1": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "Rf6rY8y5iSNpT1lSPYnf88tYQEu1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "aleblanc252@365.lakemichigancollege.edu"
+      }
+    },
+    "SawYm8kvFHa0qLdYvlPgBeI7JP03": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Sofurcat@gmail.com"
+      }
+    },
+    "SrwG4I3iNqaI10oOGe1TJlurxhk2": {
+      "scores": {
+        "19": {
+          "1674272050": {
+            "C_DateScore": "(2023-1-20,9)",
+            "I_DateScore": "(2023-1-20,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 19,
+            "correct": 9,
+            "date": 1674271987.652,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "I love POB save the world with behavior analysis "
+      }
+    },
+    "U9mcM5tXd1UocswKbECdofzpSkQ2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "V6rlJ6lm4Zh2fIt0dbC1jNMn9mk2": {
+      "scores": {
+        "1": {
+          "1663643842": {
+            "C_DateScore": "(2022-9-20,3)",
+            "I_DateScore": "(2022-9-20,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1663643779.129,
+            "incorrect": 1
+          }
+        },
+        "6": {
+          "1663644144": {
+            "C_DateScore": "(2022-9-20,10)",
+            "I_DateScore": "(2022-9-20,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 6,
+            "correct": 10,
+            "date": 1663644082.261,
+            "incorrect": 1
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Helepikk@tlu.ee"
+      }
+    },
+    "VNvCbw3mk2gspthpoNcCt6PVdIb2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "Vw1talCozDY9g1XxQvum6qmfcYG2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "W2hyT2Q5BEUaGKykLYA9fgXkCfI3": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Jared.gibb@gmail.com"
+      }
+    },
+    "W5Cah29hWVOucPRHBoZaf77nvao2": {
+      "scores": [
+        null,
+        {
+          "1661806390": {
+            "C_DateScore": "(2022-8-29,6)",
+            "I_DateScore": "(2022-8-29,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 6,
+            "date": 1661806316.816,
+            "incorrect": 0
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Dxt10670@ucmo.edu"
+      }
+    },
+    "Wffhg5UjdtMrz6Ebws7vTjuFLmf2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "drbusque@gmail.com"
+      }
+    },
+    "WjshJGI158SisDnFdrANBFvJAYn1": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "XAnCcitoFZWp9F3n0DbF9jTeX252": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Nepuia@yahoo.com"
+      }
+    },
+    "XI7HVnlyVaZHngfqLlnJHEMupMv1": {
+      "scores": {
+        "3": {
+          "1726503637": {
+            "C_DateScore": "(2024-9-16,13)",
+            "I_DateScore": "(2024-9-16,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 3,
+            "correct": 13,
+            "date": 1726503568.581,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "YBm33ZW3FeYnWblfnaqBHcDrdtz2": {
+      "scores": [
+        null,
+        {
+          "1645495346": {
+            "C_DateScore": "(2022-2-21,75)",
+            "I_DateScore": "(2022-2-21,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 75,
+            "date": 1645495280.093,
+            "incorrect": 1
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Kaitlyn",
+        "where_to_send_results": "kaitlynbarber2011@gmail.com"
+      }
+    },
+    "YWCYPvKnHKNPtUfvSyQGpvyXJzy2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Nicole",
+        "where_to_send_results": "Mariposanicole@hotmail.com"
+      }
+    },
+    "YYy0Be9ojmPGP02OMV7rzLL6HnF2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "vilate.winfrey@wmich.edu"
+      }
+    },
+    "Yl4vfVhgahdt9VLNICyq7LtHLYX2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "ZS41x7vW04YEiSYt8ouga9x4bix1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Kristinnaarits@gmail.com"
+      }
+    },
+    "Zdh7aeVVVhOddTljum2gFD0H8lD2": {
+      "scores": [
+        null,
+        {
+          "1674559710": {
+            "C_DateScore": "(2023-1-24,1)",
+            "I_DateScore": "(2023-1-24,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 1,
+            "date": 1674491212.249,
+            "incorrect": 0
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Irameinhofer@yahoo.com"
+      }
+    },
+    "ZzZoRDCpP4dzgyCVbFp4jvjDb6v2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "a3bu1vrzspUrMin5L5UIHLvh1fw1": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "aftav6piuwPvNnN79mnHpnlnrQY2": {
+      "scores": {
+        "13": {
+          "1658359053": {
+            "C_DateScore": "(2022-7-21,30)",
+            "I_DateScore": "(2022-7-21,2)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 13,
+            "correct": 30,
+            "date": 1658358985.434,
+            "incorrect": 2
+          },
+          "1658359162": {
+            "C_DateScore": "(2022-7-21,11)",
+            "I_DateScore": "(2022-7-21,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 13,
+            "correct": 11,
+            "date": 1658359084.824,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Beatrice",
+        "where_to_send_results": "beatrice.busuioc@yahoo.com"
+      }
+    },
+    "ahWJke8XCXPDGNUSpTBcSTukcN13": {
+      "scores": {
+        "6": {
+          "1738158887": {
+            "C_DateScore": "(2025-1-29,6)",
+            "I_DateScore": "(2025-1-29,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 6,
+            "correct": 6,
+            "date": 1738158825.383,
+            "incorrect": 0
+          },
+          "1738163385": {
+            "C_DateScore": "(2025-1-29,6)",
+            "I_DateScore": "(2025-1-29,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 6,
+            "correct": 6,
+            "date": 1738163322.188,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "aileen.gaytan@gmail.com"
+      }
+    },
+    "c8eUMObCZWUXQeyhAUasgL5CYVO2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "odlavine@gmail.com"
+      }
+    },
+    "cLMfjXM4KJfhsDWuDGexNkXXWxE3": {
+      "scores": {
+        "6": {
+          "1738121620": {
+            "C_DateScore": "(2025-1-28,18)",
+            "I_DateScore": "(2025-1-28,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 6,
+            "correct": 18,
+            "date": 1738121557.631,
+            "incorrect": 1
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "klong165@365.lakemichigancollege.edu"
+      }
+    },
+    "cYEn9CQVb5g1DObR4j3ldKPezyo1": {
+      "scores": {
+        "1": {
+          "1685720939": {
+            "C_DateScore": "(2023-6-2,3)",
+            "I_DateScore": "(2023-6-2,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1685720877.116,
+            "incorrect": 1
+          }
+        },
+        "6": {
+          "1685720778": {
+            "C_DateScore": "(2023-6-2,13)",
+            "I_DateScore": "(2023-6-2,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 6,
+            "correct": 13,
+            "date": 1685720712.466,
+            "incorrect": 1
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "dnk64O6byzOyqcDmB4mtcu51w5h1": {
+      "scores": {
+        "4": {
+          "1674789275": {
+            "C_DateScore": "(2023-1-26,4)",
+            "I_DateScore": "(2023-1-26,4)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 4,
+            "correct": 4,
+            "date": 1674789212.908,
+            "incorrect": 4
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "dtQp1q504SV15uYq48nZ4ktPynk2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "egfiaM3N1LQBN5pjqv2sP9bUGg13": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "fOwBdQ7Q3ugcSYn7alsuYQ2M3MA2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "fQvEbwv9EzLUHEIg0WQi57qIlkg1": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "faLxO9puzQMVfeSzI3qjmm9pe3V2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "samman.hani27@gmail.com"
+      }
+    },
+    "g7MvV58HZpc7f0PfnCpgbZbGmKp2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "jordanmeeth@gmail.com"
+      }
+    },
+    "gJFg8CjIgMUG2CiVLJYh6dN9MXL2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "guido.augusto.soldera@gmail.com"
+      }
+    },
+    "gZmh2a23HCPO4pMA3tBOkxlJWkS2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Abyjacques67@gmail.com"
+      }
+    },
+    "geVzLdUHk7ZykVnVFrwn0MubVfF3": {
+      "scores": [
+        null,
+        {
+          "1674310658": {
+            "C_DateScore": "(2023-1-21,23)",
+            "I_DateScore": "(2023-1-21,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 23,
+            "date": 1674310595.83,
+            "incorrect": 0
+          }
+        },
+        {
+          "1674310501": {
+            "C_DateScore": "(2023-1-21,13)",
+            "I_DateScore": "(2023-1-21,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 13,
+            "date": 1674310436.051,
+            "incorrect": 0
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "ahamedbusra@gmail.com"
+      }
+    },
+    "h0SBeChki4fTvSQTszitlRtcc7M2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "saira.kanwal2812@gmail.com"
+      }
+    },
+    "h5PnTQmSL0PUmvA6eSrXrNLC5Pl1": {
+      "scores": {
+        "2": {
+          "1647532047": {
+            "C_DateScore": "(2022-3-17,11)",
+            "I_DateScore": "(2022-3-17,7)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 11,
+            "date": 1647531984.822,
+            "incorrect": 7
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Jared@thunkable.com"
+      }
+    },
+    "hgwcVa0bYJVrAjjxiMfSFwGUYMe2": {
+      "scores": [
+        null,
+        {
+          "1674428360": {
+            "C_DateScore": "(2023-1-22,2)",
+            "I_DateScore": "(2023-1-22,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 2,
+            "date": 1674428297.395,
+            "incorrect": 0
+          },
+          "1674428440": {
+            "C_DateScore": "(2023-1-23,5)",
+            "I_DateScore": "(2023-1-23,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 5,
+            "date": 1674428372.015,
+            "incorrect": 1
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Valentina.pontoglio@alice.it"
+      }
+    },
+    "i78Q6vUAheVDFM9eDt0vlCQdjsJ2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "iGSjwEmxvVNDWijhPAt4HcMj4lF2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "K",
+        "where_to_send_results": "kohjack02@gmail.com"
+      }
+    },
+    "igSjGzxt53WjF7M3PXyEApcvrJy2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Rmiller32506@gmail.com"
+      }
+    },
+    "ihF4aSbozRXBxY1vSxwqc8rKDvc2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "jnZGur7gbFRfqMo7vOwlHrxYc3c2": {
+      "scores": [
+        null,
+        {
+          "1661033969": {
+            "C_DateScore": "(2022-8-20,0)",
+            "I_DateScore": "(2022-8-20,4)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 0,
+            "date": 1661033899.694,
+            "incorrect": 4
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "jpqXGXqctafE6sbHUF43WRi8tFv1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Mlhenry15@gmail.com"
+      }
+    },
+    "jyrkH4NL5afciRJz7zbLCAUAqT93": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Mackenzie.hascup@gmail.com"
+      }
+    },
+    "k91BrjUxxoOZ56dRsVui2FudsCU2": {
+      "scores": {
+        "5": {
+          "1674293029": {
+            "C_DateScore": "(2023-1-21,5)",
+            "I_DateScore": "(2023-1-21,2)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 5,
+            "correct": 5,
+            "date": 1674292943.669,
+            "incorrect": 2
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Butterflywildflower@gmail.com"
+      }
+    },
+    "kIqqdF2Gl9cwNhAtmfMFoZgr6l72": {
+      "scores": [
+        null,
+        {
+          "1676695766": {
+            "C_DateScore": "(2023-2-17,7)",
+            "I_DateScore": "(2023-2-17,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 7,
+            "date": 1676695690.917,
+            "incorrect": 1
+          },
+          "1677437043": {
+            "C_DateScore": "(2023-2-26,26)",
+            "I_DateScore": "(2023-2-26,6)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 26,
+            "date": 1677436975.499,
+            "incorrect": 6
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "euzkanga@hotmail.com"
+      }
+    },
+    "kOuuTubFpmZpQzSbR6gZJ20ICUC2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Elke",
+        "where_to_send_results": "elke.truxal@hotmail.com"
+      }
+    },
+    "kh0ODi2mqbRXZEyLRSnl5sXfZjd2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "lu6w1ccOqtPvdFeT1oF1U9jFf8y1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "emmastout1228@gmail.com"
+      }
+    },
+    "m8i8zD4no0W9X7MdGUa07TFuJxW2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Lizbutler57@gmail.com"
+      }
+    },
+    "n0sAvU453ebkqeS9Kuc3fexoVpA2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Jonathan.Matthew.dietz@gmail.com"
+      }
+    },
+    "n60TkRZvWaMQB02DWfyzla35kHV2": {
+      "scores": {
+        "3": {
+          "1674492637": {
+            "C_DateScore": "(2023-1-23,11)",
+            "I_DateScore": "(2023-1-23,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 3,
+            "correct": 11,
+            "date": 1674492575.139,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "n8VKNw61GBbJ6SFEniQNELvbvJC3": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "nZRZ12DTbEePt48TPw1BFt5ocCW2": {
+      "scores": {
+        "2": {
+          "1645736273": {
+            "C_DateScore": "(2022-2-24,22)",
+            "I_DateScore": "(2022-2-24,16)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 22,
+            "date": 1645736208.364,
+            "incorrect": 16
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "null",
+        "where_to_send_results": "null"
+      }
+    },
+    "oFq4ibIc9qYlSMJpum2RirCqVtt1": {
+      "scores": [
+        null,
+        {
+          "1674320564": {
+            "C_DateScore": "(2023-1-21,21)",
+            "I_DateScore": "(2023-1-21,6)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 21,
+            "date": 1674320465.709,
+            "incorrect": 6
+          },
+          "1686174543": {
+            "C_DateScore": "(2023-6-7,3)",
+            "I_DateScore": "(2023-6-7,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1686174472.127,
+            "incorrect": 0
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "oub8djCmwhfS7tTC8Jx4BnQ6vFw2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "pJhDW3qSirfeNcgkiY7HyDfSaQU2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "christinebolthouse1@yahoo.com"
+      }
+    },
+    "pQliZYBzCgcBfthVvQrPvvGvmuh2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "qDSDWetyMuQhT5HVynZcnuMy63E2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "ashleigh",
+        "where_to_send_results": "aklimkiewicz@gatewaypediatrictherapy.com"
+      }
+    },
+    "qGpCqeJ1JqaCmwAdCMC5DAVjJdo2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Sofiakbaber@gmail.com"
+      }
+    },
+    "qJftRypN3iQpd6hAmWk0MbGkq6J2": {
+      "scores": [
+        null,
+        {
+          "1674279193": {
+            "C_DateScore": "(2023-1-21,4)",
+            "I_DateScore": "(2023-1-21,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 4,
+            "date": 1674279113.059,
+            "incorrect": 0
+          },
+          "1674314578": {
+            "C_DateScore": "(2023-1-21,3)",
+            "I_DateScore": "(2023-1-21,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1674314513.659,
+            "incorrect": 0
+          },
+          "1674315023": {
+            "C_DateScore": "(2023-1-21,4)",
+            "I_DateScore": "(2023-1-21,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 4,
+            "date": 1674314659.615,
+            "incorrect": 1
+          },
+          "1674315186": {
+            "C_DateScore": "(2023-1-21,3)",
+            "I_DateScore": "(2023-1-21,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 3,
+            "date": 1674315117.964,
+            "incorrect": 1
+          },
+          "1674412357": {
+            "C_DateScore": "(2023-1-22,6)",
+            "I_DateScore": "(2023-1-22,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 6,
+            "date": 1674412295.195,
+            "incorrect": 0
+          },
+          "1674412840": {
+            "C_DateScore": "(2023-1-22,9)",
+            "I_DateScore": "(2023-1-22,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 9,
+            "date": 1674412778.968,
+            "incorrect": 0
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Adrian ",
+        "where_to_send_results": "psico.adrianbegazo@gmail.com"
+      }
+    },
+    "qYtxhRgHaadPP0UAlqgEY0enybm2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "aubreywoodman98@gmail.com"
+      }
+    },
+    "qaDKLYRONkQVczal4HxpP7imHcC2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "mroll727@365.lakemichigancollege.edu"
+      }
+    },
+    "qctNRU42YEOqILx5E2Z8nZ6FkkP2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "qdtxxOQQMnWij1YFyvrQXAHmExr1": {
+      "scores": {
+        "3": {
+          "1726504671": {
+            "C_DateScore": "(2024-9-16,7)",
+            "I_DateScore": "(2024-9-16,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 3,
+            "correct": 7,
+            "date": 1726504601.935,
+            "incorrect": 1
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "qiCnxDb86phAqVcOqkQoZrjsrmn1": {
+      "scores": {
+        "1": {
+          "1674581887": {
+            "C_DateScore": "(2023-1-24,10)",
+            "I_DateScore": "(2023-1-24,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 10,
+            "date": 1674581825.184,
+            "incorrect": 0
+          }
+        },
+        "26": {
+          "1674581812": {
+            "C_DateScore": "(2023-1-24,3)",
+            "I_DateScore": "(2023-1-24,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 26,
+            "correct": 3,
+            "date": 1674581747.689,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "rebTtsS6YvfIJgzdUaqSxEr2aSf2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "ekiou317@365.lakemichigancollege.edu"
+      }
+    },
+    "tDOFsb1z2VRQIZUOr1fCdOtfJxh2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Vickybldrs@hotmail.com "
+      }
+    },
+    "tsyPe1Asv2VrCdgWA5q54eveXOI2": {
+      "scores": {
+        "7": {
+          "1675813590": {
+            "C_DateScore": "(2023-2-7,1)",
+            "I_DateScore": "(2023-2-7,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 7,
+            "correct": 1,
+            "date": 1675813505.974,
+            "incorrect": 1
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Sarah.v.ball@wmich.edu"
+      }
+    },
+    "tv07jA1OTDWrZot5gwOZYOKy73S2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "ang.strelnikova@gmail.com"
+      }
+    },
+    "u9LvDJx31VhFAjQDaMB9NlwV4D13": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Jeff",
+        "where_to_send_results": "jafobij200@naluzotan.com"
+      }
+    },
+    "vTVSc9PahtX8thlF3Pfbidox5no2": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "vTc0jVi4k9O6bYEFg2fpg0XnHDo1": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Jen",
+        "where_to_send_results": "jzapolnik@outlook.com"
+      }
+    },
+    "vXzu5OC9aqZZnA6BnWCqsXWj03v2": {
+      "scores": {
+        "10": {
+          "1662687676": {
+            "C_DateScore": "(2022-9-8,22)",
+            "I_DateScore": "(2022-9-8,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 10,
+            "correct": 22,
+            "date": 1662687610.076,
+            "incorrect": 0
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "vZP7wC1eanVzMpebJDeT5IkGRIr2": {
+      "scores": [
+        null,
+        {
+          "1688376951": {
+            "C_DateScore": "(2023-7-3,9)",
+            "I_DateScore": "(2023-7-3,0)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 9,
+            "date": 1688376884.5,
+            "incorrect": 0
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "ebereberovichsilov@gmail.com"
+      }
+    },
+    "vofVvJJsSHXd475JH0aj2qahrH92": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Melissa.a.cattane@wmich.edu"
+      }
+    },
+    "w4C1roL1rCM0MCgsrKdX8PizN8h2": {
+      "scores": {
+        "24": {
+          "1650040166": {
+            "C_DateScore": "(2022-4-15,8)",
+            "I_DateScore": "(2022-4-15,2)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 24,
+            "correct": 8,
+            "date": 1650040102.12,
+            "incorrect": 2
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true,
+        "what_to_call_you": "Jason",
+        "where_to_send_results": "Jthomasotto@gmail.com"
+      }
+    },
+    "x2pCCHbJQCaX9vAcb0fpSBG6pI63": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "Bcba.brittaincoleman@gmail.com"
+      }
+    },
+    "xHy9uILLGDXXerbNnnyALaHKBe82": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "y5zhUPNht0aYIxjcn9dvlGE5LW43": {
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "y95E2xXV20QWv0naNWUviyXkeq82": {
+      "scores": [
+        null,
+        {
+          "1653674287": {
+            "C_DateScore": "(2022-5-27,34)",
+            "I_DateScore": "(2022-5-27,12)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 34,
+            "date": 1653674224.795,
+            "incorrect": 12
+          },
+          "1653675651": {
+            "C_DateScore": "(2022-5-27,69)",
+            "I_DateScore": "(2022-5-27,28)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 1,
+            "correct": 69,
+            "date": 1653675590.016,
+            "incorrect": 28
+          }
+        }
+      ],
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "z3CMFgwDYpYzjvJhvMOEPv1Ub952": {
+      "scores": {
+        "2": {
+          "1674332622": {
+            "C_DateScore": "(2023-1-21,3)",
+            "I_DateScore": "(2023-1-21,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 3,
+            "date": 1674332548.348,
+            "incorrect": 1
+          },
+          "1674332697": {
+            "C_DateScore": "(2023-1-21,8)",
+            "I_DateScore": "(2023-1-21,1)",
+            "__scopeVariableInfo": {
+              "scope": "APP",
+              "variableName": "currentUsersFlashRound"
+            },
+            "chapter": 2,
+            "correct": 8,
+            "date": 1674332634.478,
+            "incorrect": 1
+          }
+        }
+      },
+      "userInfo": {
+        "onboarding_complete": true
+      }
+    },
+    "z47vfht2cRhRywaCH9XWghsbjKv2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "lily.tierney@vikings.berry.edu"
+      }
+    },
+    "zeY3fGmRAHOUf6p8pjAvx0GVjFz2": {
+      "userInfo": {
+        "onboarding_complete": true,
+        "where_to_send_results": "anna.berfer@gmail.com"
+      }
+    }
+  }
+}
