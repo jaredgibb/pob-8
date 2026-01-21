@@ -5,6 +5,7 @@
       ".write": false
     },
     "terms": {
+      ".indexOn": ["chapter"],
       ".read": true,
       ".write": false
     },

@@ -18,6 +18,13 @@ A simple React + Firebase flashcard app with chapter-based study rounds and anal
    npm run dev
    ```
 
+## Firebase CLI (RTDB + Auth)
+
+- Set the Firebase project (once): `firebase use --add` (or edit `.firebaserc` with your project ID).
+- Deploy RTDB rules: `firebase deploy --only database` (add `--project <id>` if no default).
+- Local emulators (Auth + RTDB): `firebase emulators:start --only auth,database`.
+- Enable Email/Password in Firebase Auth in the console before signing in.
+
 ## Data paths used
 
 - Chapters: `/chapters`

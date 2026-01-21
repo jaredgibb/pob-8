@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "your-project-id",
+    "staging": "principles-of-bx"
+  },
+  "targets": {},
+  "etags": {}
+}
