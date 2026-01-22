@@ -158,14 +158,13 @@ export default function Safmeds() {
       set_active_id(imported_set.id);
       set_message(`Imported "${imported_set.title}" to your Safmeds sets.`);
       set_error_message("");
-    } catch (error) {
-      set_error_message(error.message || "Unable to import this Safmeds set.");
-    } finally {
       setSearchParams((prev) => {
         const next = new URLSearchParams(prev);
         next.delete("import");
         return next;
       });
+    } catch (error) {
+      set_error_message(error.message || "Unable to import this Safmeds set.");
     }
   }, [searchParams, setSearchParams]);
 
