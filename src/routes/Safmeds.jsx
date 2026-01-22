@@ -4,6 +4,8 @@ import Flashcard from "../components/Flashcard.jsx";
 import { shuffle_array } from "../lib/shuffle.js";
 
 const STORAGE_KEY = "safmeds_sets";
+const MAX_CARDS_PER_SET = 1000;
+const MAX_IMPORT_SIZE_BYTES = 500000; // 500KB limit for imported data
 
 const create_id = () => {
   if (typeof crypto !== "undefined" && crypto.randomUUID) {
@@ -53,6 +55,44 @@ const save_sets = (sets) => {
   }
 };
 
+const validate_import_data = (data) => {
+  // Validate the data structure
+  if (!data?.title || !Array.isArray(data.cards)) {
+    return { valid: false, error: "Invalid share payload format." };
+  }
+
+  // Filter valid cards first
+  const valid_cards = data.cards.filter((card) => card.term && card.definition);
+
+  // Check number of cards
+  if (valid_cards.length > MAX_CARDS_PER_SET) {
+    return {
+      valid: false,
+      error: `This set has too many cards (${valid_cards.length}). Maximum allowed is ${MAX_CARDS_PER_SET} cards.`,
+    };
+  }
+
+  // Check total data size
+  const import_set = {
+    title: data.title,
+    description: data.description || "",
+    cards: valid_cards,
+  };
+  const serialized = JSON.stringify(import_set);
+  const size_bytes = new Blob([serialized]).size;
+
+  if (size_bytes > MAX_IMPORT_SIZE_BYTES) {
+    const size_kb = Math.round(size_bytes / 1024);
+    const max_kb = Math.round(MAX_IMPORT_SIZE_BYTES / 1024);
+    return {
+      valid: false,
+      error: `This set is too large (${size_kb}KB). Maximum allowed is ${max_kb}KB.`,
+    };
+  }
+
+  return { valid: true, cards: valid_cards };
+};
+
 const build_share_payload = (set) =>
   safe_btoa(
     JSON.stringify({
@@ -95,14 +135,18 @@ export default function Safmeds() {
     try {
       const decoded = safe_atob(payload);
       const data = JSON.parse(decoded);
-      if (!data?.title || !Array.isArray(data.cards)) {
-        throw new Error("Invalid share payload.");
+      
+      // Validate import data
+      const validation = validate_import_data(data);
+      if (!validation.valid) {
+        throw new Error(validation.error);
       }
+
       const imported_set = {
         id: create_id(),
         title: data.title,
         description: data.description || "",
-        cards: data.cards.filter((card) => card.term && card.definition),
+        cards: validation.cards,
         created_at: Date.now(),
         imported_at: Date.now(),
       };
