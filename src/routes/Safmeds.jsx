@@ -11,7 +11,7 @@ const create_id = () => {
   if (typeof crypto !== "undefined" && crypto.randomUUID) {
     return crypto.randomUUID();
   }
-  return `set_${Date.now()}_${Math.random().toString(16).slice(2)}`;
+  return `safmeds_${Date.now()}_${Math.random().toString(16).slice(2)}`;
 };
 
 const safe_btoa = (value) => {
