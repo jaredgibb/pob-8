@@ -149,6 +149,14 @@ export default function Safmeds() {
       set_error_message("Add both a term and definition before saving.");
       return;
     }
+    if (draft_term.trim().length > 500) {
+      set_error_message("Term must be 500 characters or less.");
+      return;
+    }
+    if (draft_definition.trim().length > 500) {
+      set_error_message("Definition must be 500 characters or less.");
+      return;
+    }
     set_draft_cards((prev) => [
       ...prev,
       { term: draft_term.trim(), definition: draft_definition.trim() },
