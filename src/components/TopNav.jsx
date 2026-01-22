@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase_client.js";
 import { use_auth } from "../auth/AuthProvider.jsx";
@@ -17,6 +17,26 @@ export default function TopNav() {
       <div className="top-nav__brand">
         <Link to="/chapters">Flashcards</Link>
       </div>
+      {user ? (
+        <nav className="top-nav__links">
+          <NavLink
+            to="/chapters"
+            className={({ isActive }) =>
+              `nav-link${isActive ? " is-active" : ""}`
+            }
+          >
+            Chapters
+          </NavLink>
+          <NavLink
+            to="/safmeds"
+            className={({ isActive }) =>
+              `nav-link${isActive ? " is-active" : ""}`
+            }
+          >
+            Safmeds
+          </NavLink>
+        </nav>
+      ) : null}
       <div className="top-nav__actions">
         {user ? (
           <>
