@@ -416,7 +416,11 @@ export default function Safmeds() {
                     </button>
                     <button
                       className="button"
-                      onClick={() => handle_delete_set(set.id)}
+                      onClick={() => {
+                        if (window.confirm("Are you sure you want to delete this set? This action cannot be undone.")) {
+                          handle_delete_set(set.id);
+                        }
+                      }}
                       type="button"
                     >
                       Delete
