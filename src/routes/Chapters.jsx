@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { get, ref } from "firebase/database";
 import { db } from "../firebase/firebase_client.js";
 import ChapterCard from "../components/ChapterCard.jsx";
@@ -7,6 +8,13 @@ export default function Chapters() {
   const [chapters, set_chapters] = useState([]);
   const [is_loading, set_is_loading] = useState(true);
   const [error_message, set_error_message] = useState("");
+  const [selected_chapters, set_selected_chapters] = useState(new Set());
+  const navigate = useNavigate();
+
+  const selected_list = useMemo(
+    () => Array.from(selected_chapters).sort((a, b) => a - b),
+    [selected_chapters]
+  );
 
   useEffect(() => {
     const fetch_chapters = async () => {
@@ -32,6 +40,25 @@ export default function Chapters() {
     fetch_chapters();
   }, []);
 
+  const toggle_selected = (chapter_number) => {
+    set_selected_chapters((prev) => {
+      const next = new Set(prev);
+      if (next.has(chapter_number)) {
+        next.delete(chapter_number);
+      } else {
+        next.add(chapter_number);
+      }
+      return next;
+    });
+  };
+
+  const start_selected = () => {
+    if (selected_list.length === 0) {
+      return;
+    }
+    navigate(`/study?chapters=${selected_list.join(",")}`);
+  };
+
   return (
     <section className="stack">
       <div>
@@ -39,6 +66,21 @@ export default function Chapters() {
         <p className="muted">
           Start a flashcard round or review your analytics for each chapter.
         </p>
+      </div>
+      <div className="panel">
+        <div className="button-row">
+          <button
+            className="button"
+            type="button"
+            disabled={selected_list.length === 0}
+            onClick={start_selected}
+          >
+            Start selected ({selected_list.length})
+          </button>
+          <span className="muted">
+            Select more than one chapter to combine decks.
+          </span>
+        </div>
       </div>
       {is_loading ? (
         <div className="panel">Loading chapters...</div>
@@ -49,7 +91,12 @@ export default function Chapters() {
       ) : null}
       <div className="grid">
         {chapters.map((chapter) => (
-          <ChapterCard key={chapter.chapter} chapter={chapter} />
+          <ChapterCard
+            key={chapter.chapter}
+            chapter={chapter}
+            is_selected={selected_chapters.has(chapter.chapter)}
+            on_toggle_selected={() => toggle_selected(chapter.chapter)}
+          />
         ))}
       </div>
     </section>

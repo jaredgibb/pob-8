@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function ChapterCard({ chapter }) {
+export default function ChapterCard({ chapter, is_selected, on_toggle_selected }) {
   return (
     <div className="card">
       <div className="card__body">
@@ -14,6 +14,14 @@ export default function ChapterCard({ chapter }) {
         <Link className="button button--ghost" to={`/analytics/${chapter.chapter}`}>
           Analytics
         </Link>
+        <label className="muted">
+          <input
+            type="checkbox"
+            checked={is_selected}
+            onChange={on_toggle_selected}
+          />{" "}
+          Select
+        </label>
       </div>
     </div>
   );
