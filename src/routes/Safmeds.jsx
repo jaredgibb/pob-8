@@ -40,7 +40,17 @@ const save_sets = (sets) => {
   if (typeof window === "undefined") {
     return;
   }
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(sets));
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(sets));
+  } catch (error) {
+    console.error("Failed to save sets to localStorage:", error);
+    if (typeof window !== "undefined" && typeof window.alert === "function") {
+      window.alert(
+        "Unable to save your sets because browser storage is full or unavailable. " +
+          "Your latest changes may not be saved."
+      );
+    }
+  }
 };
 
 const build_share_payload = (set) =>
