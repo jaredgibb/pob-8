@@ -3,6 +3,7 @@ import Login from "./routes/Login.jsx";
 import Chapters from "./routes/Chapters.jsx";
 import Study from "./routes/Study.jsx";
 import Analytics from "./routes/Analytics.jsx";
+import Safmeds from "./routes/Safmeds.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import TopNav from "./components/TopNav.jsx";
 
@@ -35,6 +36,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Analytics />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/safmeds"
+            element={
+              <ProtectedRoute>
+                <Safmeds />
               </ProtectedRoute>
             }
           />
