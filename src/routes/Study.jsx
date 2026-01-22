@@ -109,7 +109,9 @@ export default function Study() {
   useEffect(() => {
     if (is_timing && start_time_ref.current !== null) {
       interval_ref.current = setInterval(() => {
-        set_elapsed_ms(Date.now() - start_time_ref.current);
+        if (start_time_ref.current !== null) {
+          set_elapsed_ms(Date.now() - start_time_ref.current);
+        }
       }, 1000);
     }
 
