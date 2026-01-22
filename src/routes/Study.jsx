@@ -24,6 +24,7 @@ export default function Study() {
   const [elapsed_ms, set_elapsed_ms] = useState(0);
   const [is_saving, set_is_saving] = useState(false);
   const [is_timing, set_is_timing] = useState(false);
+  const [is_started, set_is_started] = useState(false);
 
   const start_time_ref = useRef(null);
   const interval_ref = useRef(null);
@@ -41,6 +42,7 @@ export default function Study() {
     set_is_complete(false);
     set_elapsed_ms(0);
     set_is_timing(false);
+    set_is_started(false);
     start_time_ref.current = null;
     try {
       const terms_query = query(
@@ -66,13 +68,6 @@ export default function Study() {
   useEffect(() => {
     load_terms();
   }, [load_terms]);
-
-  useEffect(() => {
-    if (terms.length > 0 && !is_complete && start_time_ref.current === null) {
-      start_time_ref.current = Date.now();
-      set_is_timing(true);
-    }
-  }, [terms, is_complete]);
 
   useEffect(() => {
     if (is_timing && start_time_ref.current !== null) {
@@ -116,6 +111,31 @@ export default function Study() {
     set_current_index((prev) => prev + 1);
   };
 
+  const start_round = () => {
+    if (terms.length === 0 || is_started) {
+      return;
+    }
+
+    start_time_ref.current = Date.now();
+    set_is_timing(true);
+    set_is_started(true);
+  };
+
+  const end_round = () => {
+    if (!is_started || is_complete) {
+      return;
+    }
+
+    set_is_complete(true);
+    set_is_timing(false);
+    if (interval_ref.current) {
+      clearInterval(interval_ref.current);
+    }
+    if (start_time_ref.current) {
+      set_elapsed_ms(Date.now() - start_time_ref.current);
+    }
+  };
+
   const reset_round = () => {
     set_terms((prev) => shuffle_array(prev));
     set_current_index(0);
@@ -125,6 +145,7 @@ export default function Study() {
     set_is_complete(false);
     set_elapsed_ms(0);
     set_is_timing(false);
+    set_is_started(false);
     start_time_ref.current = null;
   };
 
@@ -197,7 +218,23 @@ export default function Study() {
         </div>
       ) : null}
 
-      {!is_loading && terms.length > 0 && !is_complete ? (
+      {!is_loading && terms.length > 0 && !is_complete && !is_started ? (
+        <div className="panel stack">
+          <h3>Ready to start?</h3>
+          <p>Review {terms.length} cards and track your accuracy and time.</p>
+          <div className="button-row">
+            <button className="button" onClick={start_round} type="button">
+              Start round
+            </button>
+            <button className="button button--ghost" onClick={() => navigate("/chapters")}
+              type="button">
+              Return to chapters
+            </button>
+          </div>
+        </div>
+      ) : null}
+
+      {!is_loading && terms.length > 0 && !is_complete && is_started ? (
         <div className="stack">
           <Flashcard term={current_term} is_revealed={is_revealed} on_toggle={handle_toggle} />
           <div className="button-row">
@@ -210,6 +247,13 @@ export default function Study() {
               type="button"
             >
               Incorrect
+            </button>
+            <button
+              className="button button--ghost"
+              onClick={end_round}
+              type="button"
+            >
+              End round
             </button>
           </div>
         </div>
