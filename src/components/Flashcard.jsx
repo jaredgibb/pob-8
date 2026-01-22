@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Flashcard({ term, is_revealed, on_toggle }) {
   if (!term) {
     return null;
@@ -20,3 +22,12 @@ export default function Flashcard({ term, is_revealed, on_toggle }) {
     </div>
   );
 }
+
+Flashcard.propTypes = {
+  term: PropTypes.shape({
+    term: PropTypes.string.isRequired,
+    definition: PropTypes.string.isRequired,
+  }),
+  is_revealed: PropTypes.bool.isRequired,
+  on_toggle: PropTypes.func.isRequired,
+};

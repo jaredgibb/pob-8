@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export default function ChapterCard({ chapter, is_selected, on_toggle_selected }) {
@@ -26,3 +27,12 @@ export default function ChapterCard({ chapter, is_selected, on_toggle_selected }
     </div>
   );
 }
+
+ChapterCard.propTypes = {
+  chapter: PropTypes.shape({
+    chapter: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
+  is_selected: PropTypes.bool.isRequired,
+  on_toggle_selected: PropTypes.func.isRequired,
+};
