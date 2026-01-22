@@ -79,7 +79,7 @@ const validate_import_data = (data) => {
     cards: valid_cards,
   };
   const serialized = JSON.stringify(import_set);
-  const size_bytes = new Blob([serialized]).size;
+  const size_bytes = new TextEncoder().encode(serialized).length;
 
   if (size_bytes > MAX_IMPORT_SIZE_BYTES) {
     const size_kb = Math.round(size_bytes / 1024);
