@@ -418,7 +418,7 @@ export default function Safmeds() {
             <p className="muted">No cards available in this set.</p>
           )}
 
-          {share_set && share_set.id === active_set.id ? (
+          {share_set ? (
             <div className="safmeds-share panel">
               <h4>Share this set</h4>
               <p className="muted">
