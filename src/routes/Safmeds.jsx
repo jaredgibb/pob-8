@@ -457,10 +457,16 @@ export default function Safmeds() {
                   onClick={handle_prev}
                   type="button"
                   disabled={current_index === 0}
+                  aria-label="Previous flashcard"
                 >
                   Previous
                 </button>
-                <button className="button" onClick={handle_next} type="button">
+                <button
+                  className="button"
+                  onClick={handle_next}
+                  type="button"
+                  aria-label="Next flashcard"
+                >
                   Next
                 </button>
               </div>
