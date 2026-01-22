@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { equalTo, get, orderByChild, query, ref, set } from "firebase/database";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { db } from "../firebase/firebase_client.js";
 import { use_auth } from "../auth/AuthProvider.jsx";
 import Flashcard from "../components/Flashcard.jsx";
@@ -10,7 +10,7 @@ import { format_duration_ms } from "../lib/time.js";
 
 export default function Study() {
   const { chapter_number } = useParams();
-  const chapter_value = Number(chapter_number);
+  const [search_params] = useSearchParams();
   const navigate = useNavigate();
   const { user } = use_auth();
   const [terms, set_terms] = useState([]);
@@ -29,6 +29,38 @@ export default function Study() {
   const start_time_ref = useRef(null);
   const interval_ref = useRef(null);
 
+  const selected_chapters = useMemo(() => {
+    const from_query = search_params.get("chapters");
+    if (from_query) {
+      const parsed = from_query
+        .split(",")
+        .map((value) => Number(value))
+        .filter((value) => Number.isFinite(value));
+      return Array.from(new Set(parsed));
+    }
+    if (chapter_number) {
+      const parsed = Number(chapter_number);
+      return Number.isFinite(parsed) ? [parsed] : [];
+    }
+    return [];
+  }, [chapter_number, search_params]);
+
+  const chapter_label = useMemo(() => {
+    if (selected_chapters.length === 0) {
+      return "Unknown";
+    }
+    return selected_chapters.length === 1
+      ? `Chapter ${selected_chapters[0]}`
+      : `Chapters ${selected_chapters.join(", ")}`;
+  }, [selected_chapters]);
+
+  const chapter_set_key = useMemo(() => {
+    if (selected_chapters.length <= 1) {
+      return null;
+    }
+    return selected_chapters.slice().sort((a, b) => a - b).join("-");
+  }, [selected_chapters]);
+
   const total_count = correct_count + incorrect_count;
   const accuracy = total_count ? correct_count / total_count : 0;
 
@@ -45,25 +77,30 @@ export default function Study() {
     set_is_started(false);
     start_time_ref.current = null;
     try {
-      const terms_query = query(
-        ref(db, "terms"),
-        orderByChild("chapter"),
-        equalTo(chapter_value)
-      );
-      const snapshot = await get(terms_query);
-      if (!snapshot.exists()) {
+      if (selected_chapters.length === 0) {
         set_terms([]);
         return;
       }
-      const data = snapshot.val();
-      const list = Object.values(data || {});
+
+      const snapshots = await Promise.all(
+        selected_chapters.map((chapter) =>
+          get(query(ref(db, "terms"), orderByChild("chapter"), equalTo(chapter)))
+        )
+      );
+      const list = snapshots.flatMap((snapshot) => {
+        if (!snapshot.exists()) {
+          return [];
+        }
+        const data = snapshot.val();
+        return Object.values(data || {});
+      });
       set_terms(shuffle_array(list));
     } catch (error) {
       set_error_message(error.message || "Unable to load terms.");
     } finally {
       set_is_loading(false);
     }
-  }, [chapter_value]);
+  }, [selected_chapters]);
 
   useEffect(() => {
     load_terms();
@@ -162,7 +199,9 @@ export default function Study() {
       const accuracy_value = total ? correct_count / total : 0;
       const date_string = format_date_ymd(new Date());
       const record = {
-        chapter: chapter_value,
+        chapter: selected_chapters.length === 1 ? selected_chapters[0] : null,
+        chapters: selected_chapters,
+        chapter_set_key: chapter_set_key,
         correct: correct_count,
         incorrect: incorrect_count,
         date: now_seconds,
@@ -177,8 +216,12 @@ export default function Study() {
         accuracy: accuracy_value,
       };
 
+      const score_path = chapter_set_key
+        ? `users/${user.uid}/scores/sets/${chapter_set_key}/${timestamp_key}`
+        : `users/${user.uid}/scores/${selected_chapters[0]}/${timestamp_key}`;
+
       await set(
-        ref(db, `users/${user.uid}/scores/${chapter_value}/${timestamp_key}`),
+        ref(db, score_path),
         record
       );
       navigate("/chapters", { replace: true });
@@ -198,7 +241,7 @@ export default function Study() {
   return (
     <section className="stack">
       <div className="panel">
-        <h2>Chapter {chapter_value}</h2>
+        <h2>{chapter_label}</h2>
         <div className="subtle-row">
           <span>Card {Math.min(current_index + 1, terms.length)} / {terms.length}</span>
           <span>Elapsed: {formatted_time}</span>
@@ -225,6 +268,13 @@ export default function Study() {
           <div className="button-row">
             <button className="button" onClick={start_round} type="button">
               Start round
+            </button>
+            <button
+              className="button button--ghost"
+              type="button"
+              onClick={() => set_terms((prev) => shuffle_array(prev))}
+            >
+              Shuffle cards
             </button>
             <button className="button button--ghost" onClick={() => navigate("/chapters")}
               type="button">
@@ -287,7 +337,7 @@ export default function Study() {
             </button>
             <button className="button button--ghost" onClick={reset_round}
               type="button">
-              Retry this chapter
+              Retry & shuffle
             </button>
           </div>
         </div>
