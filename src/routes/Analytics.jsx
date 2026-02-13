@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { get, ref } from "firebase/database";
-import { useParams } from "react-router-dom";
+import { get, limitToLast, query, ref } from "firebase/database";
+import { Link, useParams } from "react-router-dom";
 import {
   Bar,
   BarChart,
@@ -14,7 +14,10 @@ import {
   YAxis,
 } from "recharts";
 import { db } from "../firebase/firebase_client.js";
+import { DB_PATHS, MAX_AG_HISTORY } from "../lib/constants.js";
 import { use_auth } from "../auth/AuthProvider.jsx";
+import { useDocumentTitle } from "../lib/useDocumentTitle.js";
+import Skeleton from "../components/Skeleton.jsx";
 import { format_full_date, format_time_label } from "../lib/date.js";
 import { format_duration_ms, parse_duration_ms } from "../lib/time.js";
 
@@ -74,26 +77,31 @@ export default function Analytics() {
   const [error_message, set_error_message] = useState("");
   const [range_filter, set_range_filter] = useState("all");
 
-  useEffect(() => {
-    const fetch_scores = async () => {
-      if (!user) {
-        return;
-      }
-      set_is_loading(true);
-      set_error_message("");
-      try {
-        const snapshot = await get(ref(db, `users/${user.uid}/scores/${chapter_value}`));
-        const data = snapshot.exists() ? snapshot.val() : null;
-        set_scores(normalize_scores(data));
-      } catch (error) {
-        set_error_message(error.message || "Unable to load analytics.");
-      } finally {
-        set_is_loading(false);
-      }
-    };
+  useDocumentTitle(`Analytics - Chapter ${chapter_value}`);
 
+  const fetch_scores = async () => {
+    if (!user) {
+      return;
+    }
+    set_is_loading(true);
+    set_error_message("");
+    try {
+      const db_ref = ref(db, `${DB_PATHS.USERS}/${user.uid}/${DB_PATHS.SCORES}/${chapter_value}`);
+      const recent_query = query(db_ref, limitToLast(MAX_AG_HISTORY));
+      const snapshot = await get(recent_query);
+      const data = snapshot.exists() ? snapshot.val() : null;
+      set_scores(normalize_scores(data));
+    } catch (error) {
+      set_error_message(error.message || "Unable to load analytics.");
+    } finally {
+      set_is_loading(false);
+    }
+  };
+
+  useEffect(() => {
     fetch_scores();
-  }, [chapter_value, user]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [chapter_value, user?.uid]);
 
   const filtered_scores = useMemo(() => {
     if (range_filter === "all") {
@@ -129,6 +137,9 @@ export default function Analytics() {
   return (
     <section className="stack">
       <div>
+        <Link to="/chapters" className="muted" style={{ fontSize: "0.85rem" }}>
+          ← Back to chapters
+        </Link>
         <h2>Chapter {chapter_value} analytics</h2>
         <p className="muted">Track your accuracy and speed over time.</p>
       </div>
@@ -153,8 +164,22 @@ export default function Analytics() {
         </div>
       </div>
 
-      {is_loading ? <div className="panel">Loading analytics...</div> : null}
-      {error_message ? <div className="alert">{error_message}</div> : null}
+      {is_loading ? (
+        <div className="stats-grid">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <Skeleton key={i} className="" style={{ height: "80px", borderRadius: "1rem" }} />
+          ))}
+        </div>
+      ) : null}
+
+      {error_message ? (
+        <div className="alert stack">
+          <p>{error_message}</p>
+          <button className="button button--ghost" onClick={fetch_scores} type="button">
+            Retry
+          </button>
+        </div>
+      ) : null}
 
       {!is_loading && filtered_scores.length === 0 ? (
         <div className="panel">No rounds saved yet for this chapter.</div>

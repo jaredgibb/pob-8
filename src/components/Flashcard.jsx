@@ -13,12 +13,24 @@ export default function Flashcard({ term, is_revealed, on_toggle }) {
   };
 
   return (
-    <div className="flashcard" onClick={on_toggle} onKeyDown={handle_key_down} role="button" tabIndex={0}>
-      <div className="flashcard__label">{is_revealed ? "Definition" : "Term"}</div>
+    <div
+      className="flashcard"
+      onClick={on_toggle}
+      onKeyDown={handle_key_down}
+      role="button"
+      tabIndex={0}
+      aria-label={is_revealed ? `Definition: ${term.definition}. Tap to show term.` : `Term: ${term.term}. Tap to reveal definition.`}
+      aria-pressed={is_revealed}
+    >
+      <div className="flashcard__label" aria-hidden="true">
+        {is_revealed ? "Definition" : "Term"}
+      </div>
       <div className="flashcard__content">
         {is_revealed ? term.definition : term.term}
       </div>
-      <div className="flashcard__hint">Tap to {is_revealed ? "hide" : "reveal"}</div>
+      <div className="flashcard__hint" aria-hidden="true">
+        Tap or press Space to {is_revealed ? "hide" : "reveal"}
+      </div>
     </div>
   );
 }

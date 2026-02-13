@@ -1,9 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { equalTo, get, orderByChild, query, ref, set } from "firebase/database";
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { equalTo, get, orderByChild, push, query, ref, set } from "firebase/database";
+import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { db } from "../firebase/firebase_client.js";
+import { DB_PATHS } from "../lib/constants.js";
 import { use_auth } from "../auth/AuthProvider.jsx";
+import { useDocumentTitle } from "../lib/useDocumentTitle.js";
 import Flashcard from "../components/Flashcard.jsx";
+import Skeleton from "../components/Skeleton.jsx";
 import { shuffle_array } from "../lib/shuffle.js";
 import { format_date_ymd } from "../lib/date.js";
 import { format_duration_ms } from "../lib/time.js";
@@ -29,6 +32,22 @@ export default function Study() {
   const start_time_ref = useRef(null);
   const interval_ref = useRef(null);
 
+  // Track unsaved progress for warnings
+  const has_unsaved_progress = is_started && !is_complete && (correct_count > 0 || incorrect_count > 0);
+
+  // Warn on browser close/refresh
+  useEffect(() => {
+    const handle_before_unload = (event) => {
+      if (has_unsaved_progress) {
+        event.preventDefault();
+        event.returnValue = "";
+      }
+    };
+    
+    window.addEventListener("beforeunload", handle_before_unload);
+    return () => window.removeEventListener("beforeunload", handle_before_unload);
+  }, [has_unsaved_progress]);
+
   const selected_chapters = useMemo(() => {
     const from_query = search_params.get("chapters");
     if (from_query) {
@@ -53,6 +72,8 @@ export default function Study() {
       ? `Chapter ${selected_chapters[0]}`
       : `Chapters ${selected_chapters.join(", ")}`;
   }, [selected_chapters]);
+
+  useDocumentTitle(`Study - ${chapter_label}`);
 
   const chapter_set_key = useMemo(() => {
     if (selected_chapters.length <= 1) {
@@ -84,7 +105,7 @@ export default function Study() {
 
       const snapshots = await Promise.all(
         selected_chapters.map((chapter) =>
-          get(query(ref(db, "terms"), orderByChild("chapter"), equalTo(chapter)))
+          get(query(ref(db, DB_PATHS.TERMS), orderByChild("chapter"), equalTo(chapter)))
         )
       );
       const list = snapshots.flatMap((snapshot) => {
@@ -121,6 +142,60 @@ export default function Study() {
       }
     };
   }, [is_timing]);
+
+  // Keyboard shortcuts for accessibility and faster study
+  useEffect(() => {
+    const handle_keydown = (event) => {
+      // Ignore if user is typing in an input
+      if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
+        return;
+      }
+
+      if (!is_started && terms.length > 0 && !is_complete && event.key === "Enter") {
+        event.preventDefault();
+        start_round();
+        return;
+      }
+
+      if (is_started && !is_complete) {
+        switch (event.key) {
+          case " ":
+          case "Enter":
+            event.preventDefault();
+            handle_toggle();
+            break;
+          case "ArrowRight":
+          case "c":
+          case "C":
+            event.preventDefault();
+            if (is_revealed) {
+              handle_score(true);
+            }
+            break;
+          case "ArrowLeft":
+          case "i":
+          case "I":
+            event.preventDefault();
+            if (is_revealed) {
+              handle_score(false);
+            }
+            break;
+          case "ArrowUp":
+            event.preventDefault();
+            if (current_index > 0) {
+              set_current_index((prev) => prev - 1);
+              set_is_revealed(false);
+            }
+            break;
+          default:
+            break;
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handle_keydown);
+    return () => window.removeEventListener("keydown", handle_keydown);
+  }, [is_started, is_complete, is_revealed, terms.length, current_index]);
 
   const handle_toggle = () => {
     set_is_revealed((prev) => !prev);
@@ -196,7 +271,6 @@ export default function Study() {
     set_is_saving(true);
     try {
       const now_seconds = Date.now() / 1000;
-      const timestamp_key = String(Math.floor(now_seconds));
       const total = correct_count + incorrect_count;
       const accuracy_value = total ? correct_count / total : 0;
       const date_string = format_date_ymd(new Date());
@@ -218,14 +292,12 @@ export default function Study() {
         accuracy: accuracy_value,
       };
 
-      const score_path = chapter_set_key
-        ? `users/${user.uid}/scores/sets/${chapter_set_key}/${timestamp_key}`
-        : `users/${user.uid}/scores/${selected_chapters[0]}/${timestamp_key}`;
+      const score_root_path = chapter_set_key
+        ? `${DB_PATHS.USERS}/${user.uid}/${DB_PATHS.SCORES}/sets/${chapter_set_key}`
+        : `${DB_PATHS.USERS}/${user.uid}/${DB_PATHS.SCORES}/${selected_chapters[0]}`;
 
-      await set(
-        ref(db, score_path),
-        record
-      );
+      // Use push() to generate a unique ID
+      await push(ref(db, score_root_path), record);
       navigate("/chapters", { replace: true });
     } catch (error) {
       set_error_message(error.message || "Unable to save score.");
@@ -239,21 +311,51 @@ export default function Study() {
     () => format_duration_ms(elapsed_ms),
     [elapsed_ms]
   );
+  const progress_percent = terms.length > 0 ? ((current_index) / terms.length) * 100 : 0;
+
+  const handle_go_back = () => {
+    if (current_index > 0) {
+      set_current_index((prev) => prev - 1);
+      set_is_revealed(false);
+    }
+  };
 
   return (
     <section className="stack">
-      <div className="panel">
+      <div className="panel study-header">
+        {!is_started && (
+          <Link to="/chapters" className="muted" style={{ fontSize: "0.85rem" }}>
+            ← Back to chapters
+          </Link>
+        )}
         <h2>{chapter_label}</h2>
         <div className="subtle-row">
           <span>Card {Math.min(current_index + 1, terms.length)} / {terms.length}</span>
-          <span>Elapsed: {formatted_time}</span>
+          <span className="timer-display">{formatted_time}</span>
         </div>
+        {is_started && !is_complete && (
+          <div className="progress-bar-container">
+            <div className="progress-bar" style={{ width: `${progress_percent}%` }} />
+          </div>
+        )}
       </div>
 
-      {is_loading ? <div className="panel">Loading terms...</div> : null}
-      {error_message ? <div className="alert">{error_message}</div> : null}
+      {is_loading ? (
+        <div className="panel">
+          <Skeleton style={{ height: "300px", width: "100%" }} />
+        </div>
+      ) : null}
+      
+      {error_message ? (
+        <div className="alert stack">
+          <p>{error_message}</p>
+          <button className="button button--ghost" onClick={load_terms} type="button">
+            Retry
+          </button>
+        </div>
+      ) : null}
 
-      {!is_loading && terms.length === 0 ? (
+      {!is_loading && !error_message && terms.length === 0 ? (
         <div className="panel">
           <p>No terms found for this chapter.</p>
           <button className="button" onClick={() => navigate("/chapters")}
@@ -289,16 +391,26 @@ export default function Study() {
       {!is_loading && terms.length > 0 && !is_complete && is_started ? (
         <div className="stack">
           <Flashcard term={current_term} is_revealed={is_revealed} on_toggle={handle_toggle} />
-          <div className="button-row">
-            <button className="button" onClick={() => handle_score(true)} type="button">
-              Correct
-            </button>
+          <div className="button-row study-controls">
             <button
               className="button button--ghost"
+              onClick={handle_go_back}
+              disabled={current_index === 0}
+              type="button"
+              title="Go back (↑)"
+            >
+              ← Back
+            </button>
+            <button
+              className="button button--danger"
               onClick={() => handle_score(false)}
               type="button"
+              title="Incorrect (I or ←)"
             >
-              Incorrect
+              ✗ Incorrect
+            </button>
+            <button className="button button--success" onClick={() => handle_score(true)} type="button" title="Correct (C or →)">
+              ✓ Correct
             </button>
             <button
               className="button button--ghost"
@@ -308,20 +420,26 @@ export default function Study() {
               End round
             </button>
           </div>
+          <p className="keyboard-hint muted">
+            Keyboard: <kbd>Space</kbd> toggle · <kbd>I</kbd> or <kbd>←</kbd> incorrect · <kbd>C</kbd> or <kbd>→</kbd> correct · <kbd>↑</kbd> go back
+          </p>
         </div>
       ) : null}
 
       {is_complete ? (
-        <div className="panel stack">
-          <h3>Round complete</h3>
+        <div className="panel stack celebration-panel">
+          <div className="celebration-header">
+            <span className="celebration-emoji">🎉</span>
+            <h3>Round complete!</h3>
+          </div>
           <div className="stats-grid">
             <div className="stat">
               <span className="stat__label">Correct</span>
-              <span className="stat__value">{correct_count}</span>
+              <span className="stat__value stat__value--success">{correct_count}</span>
             </div>
             <div className="stat">
               <span className="stat__label">Incorrect</span>
-              <span className="stat__value">{incorrect_count}</span>
+              <span className="stat__value stat__value--danger">{incorrect_count}</span>
             </div>
             <div className="stat">
               <span className="stat__label">Accuracy</span>
@@ -332,6 +450,11 @@ export default function Study() {
               <span className="stat__value">{format_duration_ms(elapsed_ms)}</span>
             </div>
           </div>
+          {accuracy >= 0.9 && (
+            <div className="notice">
+              Excellent work! You scored 90% or above.
+            </div>
+          )}
           <div className="button-row">
             <button className="button" onClick={handle_save} disabled={is_saving}
               type="button">

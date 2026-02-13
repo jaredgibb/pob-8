@@ -1,25 +1,21 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { get, ref, set } from "firebase/database";
+import { db } from "../firebase/firebase_client.js";
+import { DB_PATHS } from "../lib/constants.js";
+import { useDocumentTitle } from "../lib/useDocumentTitle.js";
 import Flashcard from "../components/Flashcard.jsx";
+import Skeleton from "../components/Skeleton.jsx";
 import { shuffle_array } from "../lib/shuffle.js";
 
 const STORAGE_KEY = "safmeds_sets";
 const MAX_CARDS_PER_SET = 1000;
-const MAX_IMPORT_SIZE_BYTES = 500000; // 500KB limit for imported data
 
 const create_id = () => {
   if (typeof crypto !== "undefined" && crypto.randomUUID) {
     return crypto.randomUUID();
   }
   return `safmeds_${Date.now()}_${Math.random().toString(16).slice(2)}`;
-};
-
-const safe_btoa = (value) => {
-  return btoa(unescape(encodeURIComponent(value)));
-};
-
-const safe_atob = (value) => {
-  return decodeURIComponent(escape(atob(value)));
 };
 
 const load_sets = () => {
@@ -55,54 +51,8 @@ const save_sets = (sets) => {
   }
 };
 
-const validate_import_data = (data) => {
-  // Validate the data structure
-  if (!data?.title || !Array.isArray(data.cards)) {
-    return { valid: false, error: "Invalid share payload format." };
-  }
-
-  // Filter valid cards first
-  const valid_cards = data.cards.filter((card) => card.term && card.definition);
-
-  // Check number of cards
-  if (valid_cards.length > MAX_CARDS_PER_SET) {
-    return {
-      valid: false,
-      error: `This set has too many cards (${valid_cards.length}). Maximum allowed is ${MAX_CARDS_PER_SET} cards.`,
-    };
-  }
-
-  // Check total data size
-  const import_set = {
-    title: data.title,
-    description: data.description || "",
-    cards: valid_cards,
-  };
-  const serialized = JSON.stringify(import_set);
-  const size_bytes = new TextEncoder().encode(serialized).length;
-
-  if (size_bytes > MAX_IMPORT_SIZE_BYTES) {
-    const size_kb = Math.round(size_bytes / 1024);
-    const max_kb = Math.round(MAX_IMPORT_SIZE_BYTES / 1024);
-    return {
-      valid: false,
-      error: `This set is too large (${size_kb}KB). Maximum allowed is ${max_kb}KB.`,
-    };
-  }
-
-  return { valid: true, cards: valid_cards };
-};
-
-const build_share_payload = (set) =>
-  safe_btoa(
-    JSON.stringify({
-      title: set.title,
-      description: set.description,
-      cards: set.cards,
-    })
-  );
-
 export default function Safmeds() {
+  useDocumentTitle("Safmeds");
   const [searchParams, setSearchParams] = useSearchParams();
   const [sets, set_sets] = useState([]);
   const [active_id, set_active_id] = useState("");
@@ -117,6 +67,8 @@ export default function Safmeds() {
   const [message, set_message] = useState("");
   const [error_message, set_error_message] = useState("");
   const [share_id, set_share_id] = useState("");
+  const [is_sharing, set_is_sharing] = useState(false);
+  const [is_importing, set_is_importing] = useState(false);
 
   useEffect(() => {
     const initial_sets = load_sets();
@@ -127,45 +79,61 @@ export default function Safmeds() {
   }, []);
 
   useEffect(() => {
-    const payload = searchParams.get("import");
-    if (!payload) {
+    const import_id = searchParams.get("share_id");
+    if (!import_id) {
       return;
     }
 
-    try {
-      const decoded = safe_atob(payload);
-      const data = JSON.parse(decoded);
-      
-      // Validate import data
-      const validation = validate_import_data(data);
-      if (!validation.valid) {
-        throw new Error(validation.error);
-      }
-
-      const imported_set = {
-        id: create_id(),
-        title: data.title,
-        description: data.description || "",
-        cards: validation.cards,
-        created_at: Date.now(),
-        imported_at: Date.now(),
-      };
-      set_sets((prev) => {
-        const next = [imported_set, ...prev];
-        save_sets(next);
-        return next;
-      });
-      set_active_id(imported_set.id);
-      set_message(`Imported "${imported_set.title}" to your Safmeds sets.`);
+    const fetch_shared_set = async () => {
+      set_is_importing(true);
       set_error_message("");
-      setSearchParams((prev) => {
-        const next = new URLSearchParams(prev);
-        next.delete("import");
-        return next;
-      });
-    } catch (error) {
-      set_error_message(error.message || "Unable to import this Safmeds set.");
-    }
+      try {
+        const snapshot = await get(ref(db, `${DB_PATHS.SHARED_SAFMEDS}/${import_id}`));
+        if (!snapshot.exists()) {
+          throw new Error("This shared set does not exist or has been deleted.");
+        }
+        
+        const data = snapshot.val();
+        
+        // Check if we already have this imported (optional, but good UX)
+        // For now, we always import as a new copy to avoid conflicts
+
+        const imported_set = {
+          id: create_id(),
+          title: data.title,
+          description: data.description || "",
+          cards: data.cards || [],
+          created_at: Date.now(),
+          imported_at: Date.now(),
+          original_share_id: import_id
+        };
+
+        if (!Array.isArray(imported_set.cards) || imported_set.cards.length === 0) {
+           throw new Error("The shared set appears to be empty.");
+        }
+
+        set_sets((prev) => {
+          const next = [imported_set, ...prev];
+          save_sets(next);
+          return next;
+        });
+        set_active_id(imported_set.id);
+        set_message(`Imported "${imported_set.title}" to your Safmeds sets.`);
+        
+        // Clean URL
+        setSearchParams((prev) => {
+          const next = new URLSearchParams(prev);
+          next.delete("share_id");
+          return next;
+        });
+      } catch (error) {
+        set_error_message(error.message || "Unable to import this Safmeds set.");
+      } finally {
+        set_is_importing(false);
+      }
+    };
+
+    fetch_shared_set();
   }, [searchParams, setSearchParams]);
 
   const active_set = useMemo(
@@ -184,6 +152,37 @@ export default function Safmeds() {
       set_flashcards([]);
     }
   }, [active_set]);
+
+  useEffect(() => {
+    const handle_keydown = (event) => {
+      if (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA") {
+        return;
+      }
+
+      if (active_set && flashcards.length > 0) {
+        switch (event.key) {
+          case " ":
+          case "Enter":
+            event.preventDefault();
+            handle_toggle();
+            break;
+          case "ArrowRight":
+            event.preventDefault();
+            handle_next();
+            break;
+          case "ArrowLeft":
+            event.preventDefault();
+            handle_prev();
+            break;
+          default:
+            break;
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handle_keydown);
+    return () => window.removeEventListener("keydown", handle_keydown);
+  }, [active_set, flashcards.length, is_revealed, current_index]);
 
   const handle_add_card = () => {
     set_message("");
@@ -275,8 +274,34 @@ export default function Safmeds() {
     }
   };
 
-  const handle_share = (set_id) => {
-    set_share_id(set_id);
+  const create_share_link = async (set_to_share) => {
+    if (is_sharing) return;
+    set_is_sharing(true);
+    set_message("");
+    set_error_message("");
+    
+    try {
+      // Create a short ID for sharing (simpler than UUID for URL friendliness, but unique enough)
+      // For global uniqueness without collision checks, UUID or long random string is safest. 
+      // We'll use a 12-char alphanumeric string.
+      const share_key = Math.random().toString(36).substring(2, 14) + Math.random().toString(36).substring(2, 8);
+      
+      const payload = {
+        title: set_to_share.title,
+        description: set_to_share.description || "",
+        cards: set_to_share.cards,
+        created_at: Date.now(),
+        // We could add author info if we had it, but SAFMEDS is currently anonymous/local
+      };
+
+      await set(ref(db, `${DB_PATHS.SHARED_SAFMEDS}/${share_key}`), payload);
+      set_share_id(share_key);
+    } catch (error) {
+      set_error_message("Failed to create share link. Please try again.");
+      console.error(error);
+    } finally {
+      set_is_sharing(false);
+    }
   };
 
   const handle_copy_link = async (share_url) => {
@@ -293,16 +318,26 @@ export default function Safmeds() {
     }
   };
 
-  const share_set = sets.find((set) => set.id === share_id);
   const share_link = useMemo(() => {
-    if (!share_set || typeof window === "undefined") {
+    if (!share_id || typeof window === "undefined") {
       return "";
     }
-    const payload = encodeURIComponent(build_share_payload(share_set));
-    return `${window.location.origin}/safmeds?import=${payload}`;
-  }, [share_set]);
+    return `${window.location.origin}/safmeds?share_id=${share_id}`;
+  }, [share_id]);
 
   const current_card = flashcards[current_index];
+
+  if (is_importing) {
+    return (
+      <section className="stack">
+        <div className="panel">
+          <Skeleton style={{ height: "40px", marginBottom: "1rem" }} />
+          <Skeleton style={{ height: "20px", marginBottom: "2rem" }} />
+          <p className="muted">Importing shared deck...</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="stack">
@@ -409,10 +444,11 @@ export default function Safmeds() {
                     </button>
                     <button
                       className="button button--ghost"
-                      onClick={() => handle_share(set.id)}
+                      onClick={() => create_share_link(set)}
                       type="button"
+                      disabled={is_sharing}
                     >
-                      Share
+                      {is_sharing && share_id === "" ? "Creating..." : "Share"}
                     </button>
                     <button
                       className="button"
@@ -462,6 +498,7 @@ export default function Safmeds() {
                   type="button"
                   disabled={current_index === 0}
                   aria-label="Previous flashcard"
+                  title="Previous (←)"
                 >
                   Previous
                 </button>
@@ -470,16 +507,20 @@ export default function Safmeds() {
                   onClick={handle_next}
                   type="button"
                   aria-label="Next flashcard"
+                  title="Next (→)"
                 >
                   Next
                 </button>
               </div>
+              <p className="keyboard-hint muted" style={{ marginTop: "1rem" }}>
+                Keyboard: <kbd>Space</kbd> toggle · <kbd>←</kbd> previous · <kbd>→</kbd> next
+              </p>
             </div>
           ) : (
             <p className="muted">No cards available in this set.</p>
           )}
 
-          {share_set ? (
+          {share_id && !is_sharing ? (
             <div className="safmeds-share panel">
               <h4>Share this set</h4>
               <p className="muted">
@@ -501,7 +542,7 @@ export default function Safmeds() {
                     src={`https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(
                       share_link
                     )}`}
-                    alt={`QR code for ${share_set.title}`}
+                    alt={`QR code for ${active_set.title}`}
                   />
                 </div>
               ) : null}

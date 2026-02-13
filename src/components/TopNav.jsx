@@ -15,7 +15,7 @@ export default function TopNav() {
   return (
     <header className="top-nav">
       <div className="top-nav__brand">
-        <Link to="/chapters">Flashcards</Link>
+        <Link to="/chapters">📚 PoB Flashcards</Link>
       </div>
       {user ? (
         <nav className="top-nav__links">

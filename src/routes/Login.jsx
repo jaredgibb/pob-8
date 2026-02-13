@@ -3,6 +3,31 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "fire
 import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase/firebase_client.js";
 import { use_auth } from "../auth/AuthProvider.jsx";
+import { useDocumentTitle } from "../lib/useDocumentTitle.js";
+
+const get_friendly_error = (error_code) => {
+  switch (error_code) {
+    case "auth/invalid-email":
+      return "Please enter a valid email address.";
+    case "auth/user-disabled":
+      return "This account has been disabled. Contact support.";
+    case "auth/user-not-found":
+      return "No account found with this email. Try signing up instead.";
+    case "auth/wrong-password":
+    case "auth/invalid-credential":
+      return "Incorrect password. Please try again.";
+    case "auth/email-already-in-use":
+      return "An account with this email already exists. Try logging in.";
+    case "auth/weak-password":
+      return "Password must be at least 6 characters long.";
+    case "auth/too-many-requests":
+      return "Too many failed attempts. Please try again later.";
+    case "auth/network-request-failed":
+      return "Network error. Check your internet connection.";
+    default:
+      return "Unable to authenticate. Please try again.";
+  }
+};
 
 export default function Login() {
   const navigate = useNavigate();
@@ -11,6 +36,8 @@ export default function Login() {
   const [password, set_password] = useState("");
   const [error_message, set_error_message] = useState("");
   const [is_submitting, set_is_submitting] = useState(false);
+
+  useDocumentTitle("Sign In");
 
   useEffect(() => {
     if (user) {
@@ -30,7 +57,7 @@ export default function Login() {
       }
       navigate("/chapters", { replace: true });
     } catch (error) {
-      set_error_message(error.message || "Unable to authenticate.");
+      set_error_message(get_friendly_error(error.code));
     } finally {
       set_is_submitting(false);
     }

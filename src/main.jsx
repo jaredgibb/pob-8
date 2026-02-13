@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App.jsx";
+import { RouterProvider } from "react-router-dom";
 import { AuthProvider } from "./auth/AuthProvider.jsx";
+import ErrorBoundary from "./components/ErrorBoundary.jsx";
+import { router } from "./routes/app_router.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AuthProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </AuthProvider>
+    <ErrorBoundary>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </ErrorBoundary>
   </React.StrictMode>
 );

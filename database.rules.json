@@ -15,6 +15,12 @@
         ".write": "auth != null && auth.uid === $uid"
       }
     },
+    "shared_safmeds": {
+      ".read": true,
+      "$share_id": {
+        ".write": "auth != null && !data.exists()"
+      }
+    },
     ".read": false,
     ".write": false
   }
